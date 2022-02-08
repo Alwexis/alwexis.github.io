@@ -6,4 +6,7 @@ body {
 div {
     text-align: center;
     padding: 100px 100px 100px 100px;
+    background-color: #333333;
+    border: 1px solid #000000;
+    opacity: 0.8;
 }
