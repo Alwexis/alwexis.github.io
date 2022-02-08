@@ -7,14 +7,14 @@ body {
     padding: 100px 100px 100px 100px;
 }
 
-.anotherbox {
+.box .anotherbox {
     background: #333333;
     border: 1px solid #000000;
     opacity: 0.4;
     margin: 50px
 }
 
-.content {
+.box .anotherbox .content {
     text-align: center;
     color: #000000;
 }
