@@ -3,11 +3,11 @@ body {
     /*background-size: cover;*/
 }
 
-div.div-css1 {
+.box {
     padding: 100px 100px 100px 100px;
 }
 
-.box .content {
+.content {
     background: #333333;
     border: 1px solid #000000;
     opacity: 0.4;
