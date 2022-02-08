@@ -4,24 +4,16 @@ body {
 }
 
 .box {
-    padding: 100px 100px 100px 100px;
+    position: center;
+    height: 180px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(34, 34, 34, 0.8);
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2);
+    margin: 180px
 }
 
-.box .anotherbox {
-    background: #333333;
-    border: 1px solid #000000;
-    opacity: 0.4;
-    margin: 50px
-}
-
-.box .anotherbox .content h1 {
+.box .content {
     text-align: center;
-    color: #000000;
-    opacity: 1;
-}
-
-.box .anotherbox .content p {
-    text-align: center;
-    color: #000000;
-    opacity: 1;
+    color: #FFFFFF;
+    text-shadow: 2px 2px rgba(0, 0, 0, 1);
 }
