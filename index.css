@@ -17,5 +17,6 @@ body {
 .box .anotherbox .content {
     text-align: center;
     color: #000000;
+    background: #000000;
     opacity: 1;
 }
