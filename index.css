@@ -7,11 +7,11 @@ div.div-css1 {
     padding: 100px 100px 100px 100px;
 }
 
-div.div-css2 {
-    background-color: #333333;
+.box .content {
+    background: #333333;
     border: 1px solid #000000;
-    color: #000000;
-    opacity: 0.2;
+    opacity: 0.4;
     text-align: center;
+    color: #000000;
     margin: 50px
 }
