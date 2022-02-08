@@ -3,10 +3,14 @@ body {
     background-size: cover;
 }
 
-div {
-    text-align: center;
+.div1 {
     padding: 100px 100px 100px 100px;
+}
+
+.div2 {
     background-color: #333333;
     border: 1px solid #000000;
     opacity: 0.2;
+    text-align: center;
+    margin: 10px
 }
