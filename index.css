@@ -10,11 +10,8 @@ div.div-css1 {
 div.div-css2 {
     background-color: #333333;
     border: 1px solid #000000;
-    opacity: 0.4;
-    margin: 50px
-}
-
-div.div-css2 p {
-    text-align: center;
     color: #000000;
+    opacity: 0.2;
+    text-align: center;
+    margin: 50px
 }
