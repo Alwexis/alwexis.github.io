@@ -1,4 +1,9 @@
-body {
+body-css {
     background-image: url("https://64.media.tumblr.com/4cb7e9fd040b6c5a2468212fe0d9e220/tumblr_ngllatQNeN1tqptlzo1_500.gifv");
     background-size: cover;
+}
+
+div-css {
+    text-align: center;
+    border: 10px 10px 10px 10px;
 }
