@@ -14,7 +14,7 @@ div.div-css2 {
     margin: 50px
 }
 
-.devtext {
+div.div-css2 p h1 {
     text-align: center;
-    opacity: 1;
+    color: #000000;
 }
