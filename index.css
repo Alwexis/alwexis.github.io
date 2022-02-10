@@ -29,6 +29,13 @@
 
 .pokeball:hover {
     transform: scale(120%);
+    transform: rotate(25deg);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#selected {
+    cursor: default;
 }
 
 #selected {
