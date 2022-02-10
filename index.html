@@ -3,13 +3,19 @@
     <head>
         <title>Ariel Silva</title>
         <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
     </head>
-    <body>
+    <body class="charmander" id="body">
+        <div class="navbar">
+            <a><img onclick="selectPokemon('charmander')" name="charmander" id="selected" class="pokeball" src="assets/images/Pokeball.png" width="50px"></a>
+            <a><img onclick="selectPokemon('squirtle')" name="squirtle" id="unselected" class="pokeball" src="assets/images/Pokeball.png" width="50px"></a>
+            <a><img onclick="selectPokemon('bulbasaur')" name="bulbasaur" id="unselected" class="pokeball" src="assets/images/Pokeball.png" width="50px"></a>
+        </div>
         <div class="box">
             <div class="content">
                 <h1>En desarrollo</h1>
                 <br>
-                <p>La página está actualmente en desarrollo, por mientras ve bailar a nuestro queridísimo y amado por todos, Charmander.</p>
+                <p id="desarrollotext">La página está actualmente en desarrollo, por mientras ve bailar a nuestro queridísimo y amado por todos, Charmander.</p>
             </div>
         </div>
     </body>
