@@ -1,15 +1,15 @@
 .charmander {
-    background-image: url("assets/images/Charmander Bailando.gif");
+    background-image: url("../assets/images/Charmander Bailando.gif");
     background-size: cover;
 }
 
 .squirtle {
-    background-image: url("assets/images/Squirtle Llorando.gif");
+    background-image: url("../assets/images/Squirtle Llorando.gif");
     background-size: cover;
 }
 
 .bulbasaur {
-    background-image: url("assets/images/Bulbasaur Feliz.gif");
+    background-image: url("../assets/images/Bulbasaur Feliz.gif");
     background-size: cover;
 }
 
@@ -25,6 +25,7 @@
 
 .pokeball {
     padding: 0px 10px 0px 10px;
+    transition: all .2s ease-in-out;
 }
 
 .pokeball:hover {
@@ -36,10 +37,29 @@
 
 #selected {
     cursor: default;
+    transform: scale(120%);
 }
 
-#selected {
-    transform: scale(120%);
+.portfolio {
+    background-color: rgba(22, 22, 22, 0.2);
+    text-align: center;
+    position: absolute;
+    border-radius: 0% 50% 50% 0%;
+    padding: 10px 16px 8px 10px;
+    left: 0;
+    top: 0;
+}
+
+.portfolio-img {
+    cursor: pointer;
+    margin-left: -4px;
+    transition: all .2s ease-in-out;
+}
+
+.portfolio-img:hover {
+    transform: scale(110%);
+    filter: invert();
+    transition: all .2s ease-in-out;
 }
 
 .box {
@@ -60,10 +80,10 @@
 footer {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.4);
-    position: fixed;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
     width: 25%;
-    left: 35%;
-    right: 35%;
     bottom: 0;
     padding-top: 20px;
     border-radius: 50% 50% 0% 0%;
@@ -71,6 +91,7 @@ footer {
 
 .icon {
     padding: 0px 5px 0px 5px;
+    transition: all .2s ease-in-out;
 }
 
 .icon:hover {
