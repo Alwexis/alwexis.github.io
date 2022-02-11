@@ -13,7 +13,7 @@ function displayRepositories() {
     var repositories = getPortfolioContentRepositories("Alwexis")
     var html = ``
     for (var x = 0; x < repositories.length; x++) {
-        html += `<a href="${repositories[x][1]}"><img class="repo" src="https://opengraph.githubassets.com/2/alwexis/${repositories[x][0]}"></a>`
+        html += `<a href="${repositories[x][1]}" target="_blank"><img class="repo" src="https://opengraph.githubassets.com/2/alwexis/${repositories[x][0]}"></a>`
     }
     console.log(html)
     document.getElementsByClassName("repositories")[0].innerHTML = html
