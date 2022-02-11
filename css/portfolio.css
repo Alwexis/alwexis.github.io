@@ -43,12 +43,39 @@ body {
     color: var(--title-color);
 }
 
+.repositories {
+    display: inline-block;
+}
+
+p, h1 {
+    margin: 0 auto;
+    max-width: 30em;
+    white-space: pre-line;
+}
+
+.repo {
+    margin: 1%;
+    max-width: 85vw;
+    margin: 0 1em 1em 0;
+    width: 26em;
+    border-radius: 10px;
+    border: var(--me-img-border);
+    height: auto;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.repo:hover {
+    transform: scale(105%);
+    transition: all .2s ease-in-out;
+}
+
 /* footer */
 footer {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
-    bottom: -280px;
+    bottom: -720px;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 25%;
@@ -77,22 +104,5 @@ footer {
 
 #light-on-off:hover {
     transform: scale(110%);
-    transition: all .2s ease-in-out;
-}
-
-.repo1 {
-    margin: 1%;
-    max-width: 85vw;
-    margin: 0 0 1em 0;
-    width: 26em;
-    border-radius: 10px;
-    border: var(--me-img-border);
-    height: auto;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-}
-
-.repo1:hover {
-    transform: scale(105%);
     transition: all .2s ease-in-out;
 }
