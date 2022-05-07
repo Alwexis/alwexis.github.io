@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es_cl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="assets/image/Pokedex icon.png" type="image/x-icon">
+</head>
+<body>
+    <img id="pokedex" src="assets/image/Pokedex.png">
+    <p>Esta es una Pokedex hecha por <a href="https://github.com/Alwexis" target="_blank">@Alwexis</a>, echa con fines
+        didácticos. La página, utiliza <a href="https://pokeapi.co" target="_blank">PokeAPI</a> como rest api, para
+        obtener los datos de los pokémon.</p>
+    <section id="pokemones">
+        <script>
+            $(document).ready(cargarPokemones2());
+            $(window).scroll(function () {
+                //documento = Math.round($(document).height() - $(window).height());
+                //ventana = Math.round($(window).scrollTop());
+                //if (Math.abs(ventana - documento) < 2) {
+                //    cargarPokemones(false);
+                //}
+                if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+                    cargarPokemones2();
+                }
+            });
+        </script>
+        <!-- <article class="pokemon">
+            <img class="pokemon_img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png">
+            <p class="pokemon_nro">N.°150</p>
+            <p class="pokemon_name">Mewtwo</p>
+            <div class="tipos">
+                <div class="tipo1">
+                    Psíquico
+                </div>
+                <div class="tipo2">
+                    Psíquico
+                </div>
+            </div>
+        </article> -->
+    </section>
+</body>
+</html>

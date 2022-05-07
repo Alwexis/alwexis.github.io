@@ -1,0 +1,186 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Normal {
+    background-color: #a4acaf;
+    color: #212121;
+}
+.Lucha {
+    background-color: #d56723;
+    color: #fff;
+}
+.Volador {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    color: #212121;
+}
+.Veneno {
+    background-color: #b97fc9;
+    color: #fff;
+}
+.Tierra {
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    color: #212121;
+}
+.Bicho {
+    background-color: #729f3f;
+    color: #fff;
+}
+.Fantasma {
+    background-color: #7b62a3;
+    color: #fff;
+}
+.Acero {
+    background-color: #9eb7b8;
+    color: #212121;
+}
+.Fuego {
+    background-color: #fd7d24;
+    color: #fff;
+}
+.Agua {
+    background-color: #4592c4;
+    color: #fff;
+}
+.Planta {
+    background-color: #9bcc50;
+    color: #212121;
+}
+.Eléctrico {
+    background-color: #eed535;
+    color: #212121;
+}
+.Psíquico {
+    background-color: #f366b9;
+    color: #fff;
+}
+.Hielo {
+    background-color: #51c4e7;
+    color: #212121;
+}
+.Dragón {
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    color: #fff;
+}
+.Siniestro {
+    background-color: #707070;
+    color: #fff;
+}
+.Hada {
+    background-color: #fdb9e9;
+    color: #212121;
+}
+
+/* Movil */
+@media (max-width: 950px) {
+    #pokedex {
+        width: 32vh;
+    }
+
+    #pokemones {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 2vh;
+    }
+
+    .pokemon {
+        margin: 0.5vh 1.5vh 0.5vh 1.5vh;
+    }
+
+    .pokemon_img {
+        width: 12vh;
+        background-color: rgb(240, 240, 240);
+        border-radius: 12px;
+    }
+
+    .pokemon_nro {
+        margin-top: -0.25vh;
+        margin-left: 1vh;
+        color: rgb(180, 180, 180);
+        font-size: x-small;
+        font-family: "Roboto",arial,sans-serif;
+    }
+
+    .pokemon_name {
+        margin-top: 0vh;
+        font-size: small;
+        font-weight: bold;
+        font-family: "Flexo-Demi", arial, sans-serif;
+    }
+    
+    .tipos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tipo1, .tipo2 {
+        font: "Flexo-Medium", arial, sans-serif;
+        padding: 0.5vh 2vh 0.5vh 2vh;
+        border-radius: 6px;
+        margin-left: -2vh;
+    }
+}
+
+/* escritorio */
+@media (min-width: 950px) {
+    #pokedex {
+        width: 64vh;
+    }
+
+    #pokemones {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2vh;
+    }
+
+    .pokemon {
+        margin: 1.5vh 2.5vh 1.5vh 2.5vh;
+        cursor: pointer;
+        transition: ease-in-out 0.25s;
+    }
+
+    .pokemon:hover {
+        transform: translateY(-2vh);
+        transition: ease-in-out 0.25s;
+    }
+
+    .pokemon_img {
+        width: 32vh;
+        background-color: rgb(240, 240, 240);
+        border-radius: 12px;
+    }
+
+    .pokemon_nro {
+        margin-top: -0.25vh;
+        margin-left: 1.5vh;
+        color: rgb(180, 180, 180);
+        font-size: medium;
+        font-family: "Roboto",arial,sans-serif;
+    }
+
+    .pokemon_name {
+        margin-top: -1vh;
+        margin-left: 1.5vh;
+        font-size: large;
+        font-weight: bold;
+        font-family: "Flexo-Demi", arial, sans-serif;
+    }
+    
+    .tipos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .tipo1, .tipo2 {
+        font: "Flexo-Medium", arial, sans-serif;
+        padding: 0.5vh 2vh 0.5vh 2vh;
+        border-radius: 6px;
+    }
+}
