@@ -17,7 +17,7 @@
         obtener los datos de los pokémon.</p>
     <section id="pokemones">
         <script>
-            $(document).ready(cargarPokemones2());
+            $(document).ready(cargarPokemones2(true));
             $(window).scroll(function () {
                 //documento = Math.round($(document).height() - $(window).height());
                 //ventana = Math.round($(window).scrollTop());
@@ -25,7 +25,7 @@
                 //    cargarPokemones(false);
                 //}
                 if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-                    cargarPokemones2();
+                    cargarPokemones2(false);
                 }
             });
         </script>
