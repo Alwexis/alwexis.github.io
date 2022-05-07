@@ -63,7 +63,8 @@ function cargarPokemones(inicio) {
     }
 }
 
-function cargarPokemones() {
+function cargarPokemones(inicio) {
+    if (inicio) ultimo_pokemon = 0;
     if (!cargando) {
         cargando = true;
         cantidad = window.innerWidth > 950 ? 10 : 12;
