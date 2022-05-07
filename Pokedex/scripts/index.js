@@ -97,11 +97,12 @@ function cargarPokemones2() {
                         </div>
                     </div>`;
                 }
+                nombre = response.name.substring(0, 1).toUpperCase() + response.name.substring(1);
                 document.getElementById("pokemones").innerHTML += `
                 <article class="pokemon">
                     <img class="pokemon_img" src="${response.sprites.other["official-artwork"].front_default}">
                     <p class="pokemon_nro">N.°${id}</p>
-                    <p class="pokemon_name">${response.name}</p>
+                    <p class="pokemon_name">${nombre}</p>
                     ${tipo}
                 </article>`
             });
