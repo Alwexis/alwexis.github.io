@@ -63,12 +63,11 @@ function cargarPokemones(inicio) {
     }
 }
 
-function cargarPokemones2() {
+function cargarPokemones() {
     if (!cargando) {
         cargando = true;
         cantidad = window.innerWidth > 950 ? 10 : 12;
         for(x = 0; x < cantidad; x++) {
-            console.log(ultimo_pokemon)
             ultimo_pokemon += 1;
             var pokemon = {
                 "url": `https://pokeapi.co/api/v2/pokemon/${ultimo_pokemon}/`,
