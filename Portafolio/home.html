@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel Silva</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/home.js"></script>
+</head>
+<body>
+    <section id="transicion"></section>
+    <div id="main">
+        <section id="links">
+            <a href="https://discord.com/users/776040999482032158" target="_blank"><img class="linkicon" src="assets/images/Discord.png"></a>
+            <a href="https://github.com/Alwexis" target="_blank"><img class="linkicon" src="assets/images/Github.png"></a>
+            <a href="https://www.linkedin.com/in/ariel-silva-rivera-a98b41223" target="_blank"><img class="linkicon" src="assets/images/Linkedin.png"></a>
+            <a href="https://twitter.com/Alwexisss" target="_blank"><img class="linkicon" src="assets/images/Twitter.png"></a>
+        </section>
+        <section id="personalInfo">
+            <span>Ariel</span> <span>Silva</span>
+            <span>Developer</span>
+
+            <span id="scrolldown">Scroll Down</span>
+        </section>
+        <section id="cards">
+            <div class="card sobremi">
+                Próximamente
+            </div>
+        </section>
+    </div>
+    <script>
+        $('body').on('webkitAnimationEnd', function(e){
+            if (e.originalEvent.animationName == 'transicion') {
+                document.getElementById("transicion").style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
