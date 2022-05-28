@@ -9,7 +9,7 @@
     <script src="scripts/jquery.js"></script>
     <script src="scripts/home.js"></script>
 </head>
-<body>
+<body onload="actualizarDatos()">
     <section id="transicion"></section>
     <div id="main">
         <section id="links">
@@ -18,15 +18,53 @@
             <a href="https://www.linkedin.com/in/ariel-silva-rivera-a98b41223" target="_blank"><img class="linkicon" src="assets/images/Linkedin.png"></a>
             <a href="https://twitter.com/Alwexisss" target="_blank"><img class="linkicon" src="assets/images/Twitter.png"></a>
         </section>
-        <section id="personalInfo">
+        <section id="mainSection">
             <span>Ariel</span> <span>Silva</span>
             <span>Developer</span>
 
+
             <span id="scrolldown">Scroll Down</span>
         </section>
-        <section id="cards">
-            <div class="card sobremi">
-                Próximamente
+        <section id="personalInfo">
+            <span class="aboutme">Sobre mí</span>
+            <div id="personalInfoBox">
+                Soy un estudiante de segundo año en la carrera ingeniería en informática en Duoc UC.
+                Tengo <a id="personalInfoEdad">{edad}</a> años y soy un apasionado a los <a style="color: #F33B9B;">VideoJuegos</a>, y la <a style="color: #F33B9B;">Programación</a>.
+                Desde pequeño que me interesa la tecnología y sobretodo me ha llamado la atención como trabaja y se ejecuta, aquel interés
+                luego de un tiempo, alimentó mi curiosidad y me hizo entrar al mundo de la programación.
+                Mundo del cual, los campos de <a style="color: #F33B9B;">Desarrollo Web</a>, <a style="color: #F33B9B;">Inteligencía Artificial</a> y <a style="color: #F33B9B;">Desarrollo de Videojuegos</a>, son los
+                que más me han interesado.
+
+                <div id="personalInfoSelectors">
+                    <a onclick="loadExtendedInfo('personal')" id="personalInfo0" class="personalInfoSelect">Información Personal</a> <a onclick="loadExtendedInfo('intereses')" id="personalInfo1" class="personalInfoSelect">Intereses Profesionales</a> <a onclick="loadExtendedInfo('laboral')" id="personalInfo2" class="personalInfoSelect">Información Laboral</a>
+                </div>
+                <article id="firstExtendedInfo" class="personalExtendedInfo">
+                    <div class="personalExtendedInfoText">
+                        <p><a style="border-bottom: outset 1px;">Nombre</a>: Ariel Silva</p>
+                        <p><a style="border-bottom: outset 1px;">Fecha de Nacimiento</a>: 23/11/2001</p>
+                        <p><a style="border-bottom: outset 1px;">Residencia</a>: Talcahuano</p>
+                    </div>
+                    <div class="personalExtendedInfoText">
+                        <p><a style="border-bottom: outset 1px;">Correo</a>: alwexiss@gmail.com</p>
+                        <p><a style="border-bottom: outset 1px;">Número</a>: +56 9 4052 9144</p>
+                        <p><a style="border-bottom: outset 1px;">Discord</a>: Alwexis#7722</p>
+                    </div>
+                </article>
+                <article id="secondExtendedInfo" class="personalExtendedInfo">
+                    Desarrollador Back-End
+                    Ingeniero de Datos
+                    Desarrollador Full-stack
+                </article>
+                <article id="thirdExtendedInfo" class="personalExtendedInfo">
+                    <div class="personalExtendedInfoContainer">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQGw1sjD8ImxNw/company-logo_200_200/0/1592347344138?e=1661990400&v=beta&t=bPUWGQlbuDQhYqnU_U06odw9plFkgQxomFMrrMT-FQo" alt="duocuc">
+                        <div class="personalExtendedInfoTextLaboral laboral">
+                            <span class="infoLaboralEmpresa"><a>Duoc UC</a>Sept. 2021 - Dic. 2021</span>
+                            <span><a>Puesto:</a> Profesor de ayudantías en Python</span>
+                            <span class="infoLaboralEmpresaDesc"><i>Trabajé bajo contrato por Duoc UC como Profesor de Ayudantías en Python.</i></span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
     </div>
