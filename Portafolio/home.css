@@ -105,7 +105,7 @@ body {
         }
     }
 
-    #mainSection #scrolldown {
+    #scrolldown {
         font-size: 30px;
         font-weight: 200;
         -webkit-animation: parpadearScroll;
@@ -134,6 +134,7 @@ body {
         align-items: center;
         flex-direction: column;
         margin-top: 8em;
+        margin-bottom: 6em;
         font-family: pixeloperator;
     }
 
@@ -235,6 +236,10 @@ body {
 
     .infoLaboralEmpresaDesc {
         margin-top: 1vh;
+    }
+
+    #lenguajes {
+        display: none;
     }
 }
 
@@ -454,5 +459,79 @@ body {
         font-size: 25px;
         border-bottom: solid 2px #F33B9B;
         margin-right: 5vh;
+    }
+
+    /* Lenguajes que manejo */
+    #lenguajes {
+        font-family: pixeloperator;
+        margin-top: 6em;
+    }
+
+    .lenguajesmanejados {
+        font-size: 100px;
+        border-bottom: outset 3px;
+    }
+    /* Slideshow */
+    .secondscrolldown {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    #slideshow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+        padding-bottom: 2vh;
+        border: solid 3px var(--card-background);
+    }
+
+    #slideshowItems {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slideshow-item {
+        margin: 0vh 6vh 0vh 6vh;
+        transition:
+            ease-out 0.25s,
+            ease-in 0.25s;
+    }
+
+    .control {
+        width: 2.5em;
+        height: 2.5em;
+        margin: 0vh 6vh 0vh 6vh;
+        cursor: pointer;
+        opacity: 0.6;
+        transition:
+            ease-out 0.1s,
+            ease-in 0.1s;
+    }
+
+    .control:hover {
+        transform: scale(110%);
+        transition:
+            ease-out 0.1s,
+            ease-in 0.1s;
+    }
+
+    .control:active {
+        transform: scale(90%);
+        transition:
+            ease-out 0.1s,
+            ease-in 0.1s;
+    }
+
+    .slideshow-item-title {
+        font-size: 60px;
+        border-bottom: solid 3px var(--card-background);
+    }
+    
+    .slideshow-item-desc {
+        max-width: 5em;
     }
 }

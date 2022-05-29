@@ -67,6 +67,24 @@
                 </article>
             </div>
         </section>
+        <section id="lenguajes">
+            <span class="lenguajesmanejados">Lenguajes que manejo</span>
+            <section id="slideshow">
+                <img onclick="cambiarImagen(false)" class="control" src="assets/images/left_arrow.png">
+                <article id="slideshowItems">
+                    <article class="slideshow-item">
+                        <img src="assets/images/python.png" style="height: 6em; width: 6em;">
+                    </article>
+                    <article class="slideshow-item">
+                        <img src="assets/images/java.png" style="height: 12em; width: 12em;">
+                    </article>
+                    <article class="slideshow-item">
+                        <img src="assets/images/oracle.png" style="height: 6em; width: 6em;">
+                    </article>
+                </article>
+                <img onclick="cambiarImagen(true)" class="control" src="assets/images/right_arrow.png">
+            </section>
+        </section>
     </div>
     <script>
         $('body').on('webkitAnimationEnd', function(e){
