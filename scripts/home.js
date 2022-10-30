@@ -1,6 +1,6 @@
 //? Variables
 let lang = 'ES';
-let actualScheme = 'light';
+let actualScheme = 'dark';
 let themes = {
     dark: [
         ['--font-color', '#f7f8fa'],
@@ -13,10 +13,11 @@ let themes = {
         ['--font-color', '#1C1E1F'],
         ['--icons-border', 'rgba(28, 30, 31, 0.4)'],
         ['--bg', '#f7f8fa'],
-        ['--title-color', '#E93479'],
+        ['--title-color', '#732C31'],
         ['--slider-bg', '#DDDAD5'],
     ]
 }
+let isFiltered = false;
 
 //? Temas
 function toggleScheme(scheme) {
@@ -42,9 +43,6 @@ if (hour >= 18 || hour <= 6) {
 /*
 * Since I won't pay for the fucking Google Translate API, I've created my own Translate System. Maybe
 * its not the very best and probably not the most efficient, but it works. :p
-
-* Como no voy a pagar por la maldita API de Google Translate, me vi en la obligación de crear mi propio
-* sistema de traducción. Quizás no sea el mejor y probablemente no sea el más eficiente, pero funciona. :p
 */
 loadLang('ES');
 
@@ -97,3 +95,39 @@ const swiper = new Swiper('.swiper', {
         delay: 5000,
     },
 });
+
+
+//? Repositorios
+loadRepositories();
+
+async function loadRepositories(ignoreFiltered = false) {
+    await $.get('https://api.github.com/users/alwexis/repos', async (data) => {
+        let repos;
+        if (!isFiltered) {
+            repos = data.filter(repo => repo.topics.includes('portfolio-content'));
+            document.getElementsByClassName('filter')[0].classList.add('active');
+            document.getElementsByClassName('filter')[0].setAttribute('key', 'portafolio filtrado');
+            document.getElementsByClassName('filter')[0].innerText = translates[lang]['portafolio']['filtrado'];
+            document.getElementsByClassName('filter-icon')[0].setAttribute('style', 'color: #F56B90;');
+            document.getElementsByClassName('filter-icon')[0].innerText = 'filter_list_off';
+            if (!ignoreFiltered) isFiltered = true;
+        } else {
+            repos = data;
+            document.getElementsByClassName('filter')[0].classList.remove('active');
+            document.getElementsByClassName('filter')[0].setAttribute('key', 'portafolio filtrar');
+            document.getElementsByClassName('filter')[0].innerText = translates[lang]['portafolio']['filtrar'];
+            document.getElementsByClassName('filter-icon')[0].setAttribute('style', 'color: var(--font-color);');
+            document.getElementsByClassName('filter-icon')[0].innerText = 'filter_list';
+            if (!ignoreFiltered) isFiltered = false;
+        }
+        document.getElementsByClassName('portafolio-wrapper')[0].innerHTML = '';
+        repos.forEach(repo => {
+            document.getElementsByClassName('portafolio-wrapper')[0].innerHTML += `
+                <a href="${repo.html_url}" target="_blank">
+                    <img class="portfolio-content" src="https://github-readme-stats.vercel.app/api/pin/?username=alwexis&repo=${repo.name}&theme=dracula&hide_border=true">
+                </a>
+            `
+        })
+    })
+    document.getElementById("loader2").classList.add('loaded');
+}
