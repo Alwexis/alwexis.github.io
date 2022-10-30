@@ -6,29 +6,85 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ariel Silva</title>
-	<link rel="stylesheet" href="newHome.css">
-	<script src="scripts/jquery.js"></script>
-	<script src="scripts/newHome.js"></script>
+	<link rel="stylesheet" href="styles/newHome.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 
 <body onload="init()">
-	<main>
-		<section class="welcome">
+	<div class="night">
+	</div>
+	<main style="height: 100vh;">
+		<section id="welcome">
 			<div class="info">
-				<span>Ariel Silva</span>
-				<p>Soy un estudiante de Ingenieria en Informática de DuocUC. Actualmente me encuentro cursando mi
+				<h1>Ariel Silva</h1>
+				<p class="paragraph">Soy un estudiante de Ingenieria en Informática de DuocUC. Actualmente me encuentro
+					cursando mi
 					segundo año de carrera.
 					Me interesa mucho la tecnología, cada que puedo, me gusta enterarme de nuevas tecnologías y adquirir
 					conocimientos sobre temas en específicos.
 				</p>
+				<a href="#about">Más sobre mi.</a>
 			</div>
 			<div class="reach-me">
-
+				<a href="https://twitter.com/Alwexisss" target="_blank">
+					<div class="card">
+						<img src="https://www.svgrepo.com/show/183608/twitter.svg">
+					</div>
+				</a>
+				<a href="https://www.instagram.com/alwexis._/" target="_blank">
+					<div class="card">
+						<img src="https://www.svgrepo.com/show/111199/instagram.svg">
+					</div>
+				</a>
+				<a href="https://discord.com/users/776040999482032158" target="_blank">
+					<div class="card">
+						<img src="https://www.svgrepo.com/show/331368/discord-v2.svg">
+					</div>
+				</a>
+				<a href="https://github.com/Alwexis" target="_blank">
+					<div class="card">
+						<img src="assets/images/svg/github.svg">
+					</div>
+				</a>
+				<div class="contact-me">
+					<span>Contáctame</span>
+				</div>
 			</div>
 		</section>
+		<section id="knowledge">
+			<h1>¿Qué lenguajes utilizo?</h1>
+			<!-- Slider main container -->
+			<div class="lenguajes">
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+					</div>
+				</div>
+			</div>
+			<span onclick="location.href='pages/projects.html'">Haz click aquí para ver mis proyectos</span>
+		</section>
+		<!--
+		<section id="about">
+			<div>
+				<img style="border: 4px solid; border-radius: 50%; height: 40vh; width: 40vh;" src="./assets/images/alwexis_pfp.jpg">
+			</div>
+			<div class="info">
+				<h1>Sobre mi</h1>
+				<p class="paragraph">
+					Tengo {edad} años y vengo de Santiago, Chile. Actualmente vivo en Concepción, en la región del Bío Bío.
+					
+					Mis grandes aficiones son la tecnología y los videojuegos; siendo la saga de Mega Man X mi favorita.
+
+					Debido a esto ultimo, parte de mi interés por la tecnología y programación en general, está inclinado hacia el desarrollo de videojuegos. La otra parte está inclinada al Desarrollo de Aplicaciones Web.
+				</p>
+			</div>
+		</section>
+		-->
 	</main>
-	<div class="night">
-	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/newHome.js"></script>
 </body>
 
 </html>

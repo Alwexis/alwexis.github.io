@@ -1,109 +1,99 @@
-function loadExtendedInfo(type) {
-    switch (type) {
-        case "personal":
-            if (document.getElementsByClassName("active")[0] != undefined && !document.getElementById("personalInfo0").classList.contains("active")) {
-                if (document.getElementById("personalInfo1").classList.contains("active")) {
-                    document.getElementById("secondExtendedInfo").style.display = "none";
-                } else if (document.getElementById("personalInfo2").classList.contains("active")) {
-                    document.getElementById("thirdExtendedInfo").style.display = "none";
-                }
-                document.getElementsByClassName("active")[0].classList.remove("active");
-            }
-            document.getElementById("firstExtendedInfo").style.display = "flex";
-            document.getElementById("personalInfo0").classList.add("active");
-            break;
-        case "intereses":
-            if (document.getElementsByClassName("active")[0] != undefined && !document.getElementById("personalInfo1").classList.contains("active")) {
-                if (document.getElementById("personalInfo0").classList.contains("active")) {
-                    document.getElementById("firstExtendedInfo").style.display = "none";
-                } else if (document.getElementById("personalInfo2").classList.contains("active")) {
-                    document.getElementById("thirdExtendedInfo").style.display = "none";
-                }
-                document.getElementsByClassName("active")[0].classList.remove("active");
-            }
-            document.getElementById("secondExtendedInfo").style.display = "flex";
-            document.getElementById("personalInfo1").classList.add("active");
-            break;
-        case "laboral":
-            if (document.getElementsByClassName("active")[0] != undefined && !document.getElementById("personalInfo2").classList.contains("active")) {
-                if (document.getElementById("personalInfo0").classList.contains("active")) {
-                    document.getElementById("firstExtendedInfo").style.display = "none";
-                } else if (document.getElementById("personalInfo1").classList.contains("active")) {
-                    document.getElementById("secondExtendedInfo").style.display = "none";
-                }
-                document.getElementsByClassName("active")[0].classList.remove("active");
-            }
-            document.getElementById("thirdExtendedInfo").style.display = "flex";
-            document.getElementById("personalInfo2").classList.add("active");
-            break;
-    }
+//? Variables
+let lang = 'ES';
+let actualScheme = 'light';
+let themes = {
+    dark: [
+        ['--font-color', '#f7f8fa'],
+        ['--icons-border', 'rgba(245, 245, 245, 0.4)'],
+        ['--bg', '#1C1E1F'],
+        ['--title-color', '#F9AC53'],
+        ['--slider-bg', '#141414']
+    ],
+    light: [
+        ['--font-color', '#1C1E1F'],
+        ['--icons-border', 'rgba(28, 30, 31, 0.4)'],
+        ['--bg', '#f7f8fa'],
+        ['--title-color', '#E93479'],
+        ['--slider-bg', '#DDDAD5'],
+    ]
 }
 
-// Slideshow
-imagenes = ["python", "java", "oracle", "mongodb", "html", "css", "js"];
-titulos = ["Python", "Java", "Oracle", "MongoDB", "HTML", "CSS", "JavaScript"];
-textos = [`Conocimientos principales sobre Python.
-Estudié y puse en práctica con proyectos básicos el lenguaje, proyectos como Bots de Discord y demás. Actualmente lo utilizo para el backend, usando Django como framework.`,
-`Conocimientos principales sobre Java.
-Lo he utilizado para crear mods/addons en Minecraft y para Softwares básicos de escritorio. Lo he utilizado junto con MySQL, para crear aplicaciones de inventarios.`,
-`Conocimientos medio sobre MySQL.
-Estudié y he puesto en práctica la creación de modelos relacionales, las consultas, y también la programación de bases de datos con PL/SQL. Lo he utilizado tanto con Oracle, como con MySQL.`,
-`Conocimientos básicos sobre MongoDB.
-He comenzado a estudiar hace poco las bases de datos no relacionales, y he aprendido lo básico para manejarlas junto con MongoDB. La única puesta en práctica que tengo con MongoDB, fue almacenando datos de una página web.`,
-`Conocimientos medios sobre HTML.
-Es probablemente lo que más he puesto en práctica, ya que la mayoría de proyectos que he hecho, han sido relacionados con páginas web. Lo utilizo junto con CSS y Javascript para el front-end.`,
-`Conocimientos medios sobre CSS.
-Al igual que con HTML, este lo he puesto en práctica bastantes veces, ya sea en proyectos personales como proyectos de la universidad. Lo utilizo junto con HTML y Javascript para el front-end.`,
-`Conocimientos medios sobre JavaScript.
-Lo he usado únicamente para la parte front-end de mis proyectos, por lo tanto, tengo poca experiencia y conocimientos sobre el lenguaje. Hace bastante poco comencé a estudiar la libreria React para completemtarlo. Lo utilizo principalmente junto con HTML y CSS para el front-end.`]
-
-function cambiarImagen(adelante) {
-    if (adelante) {
-        ultimaImagen = imagenes[imagenes.length - 1];
-        imagenes.pop();
-        imagenes.unshift(ultimaImagen)
-        ultimoTitulo = titulos[titulos.length - 1];
-        titulos.pop();
-        titulos.unshift(ultimoTitulo)
-        ultimoTexto = textos[textos.length - 1];
-        textos.pop();
-        textos.unshift(ultimoTexto)
+//? Temas
+function toggleScheme(scheme) {
+    let root = document.querySelector(':root');
+    if (scheme === null) {
+        actualScheme = actualScheme === 'light' ? 'dark' : 'light';
     } else {
-        primeraImagen = imagenes[0];
-        imagenes.pop();
-        imagenes.unshift(primeraImagen)
-        ultimoTitulo = titulos[0];
-        titulos.pop();
-        titulos.unshift(ultimoTitulo)
-        ultimoTexto = textos[0];
-        textos.pop();
-        textos.unshift(ultimoTexto)
+        actualScheme = scheme;
     }
-    document.getElementById("slideshowItems").innerHTML = '';
-    for (x = 0; x < 3; x++) {
-        if (x == 0 || x == 2) {
-            document.getElementById("slideshowItems").innerHTML += `
-            <article class="slideshow-item">
-                <img src="assets/images/${imagenes[x + 1]}.png" style="height: 6em; width: 6em;">
-            </article>
-            `
+    document.getElementById('theme').innerText = actualScheme + "_mode";
+    themes[actualScheme].forEach(key => {
+        root.style.setProperty(key[0], key[1]);
+    });
+}
+
+var hour = new Date().getHours();
+if (hour >= 18 || hour <= 6) {
+    toggleScheme('dark');
+    console.log('Dark mode');
+}
+
+//? Idioma | Language
+/*
+* Since I won't pay for the fucking Google Translate API, I've created my own Translate System. Maybe
+* its not the very best and probably not the most efficient, but it works. :p
+
+* Como no voy a pagar por la maldita API de Google Translate, me vi en la obligación de crear mi propio
+* sistema de traducción. Quizás no sea el mejor y probablemente no sea el más eficiente, pero funciona. :p
+*/
+loadLang('ES');
+
+function toggleLang() {
+    lang = lang === 'ES' ? 'EN' : 'ES';
+    loadLang(lang);
+}
+
+function loadLang(language) {
+    let translatable = document.querySelectorAll('.lang_toggleable');
+    translatable.forEach(element => {
+        let key = element.getAttribute('key');
+        let keys = key.split(' ');
+        if (keys.length > 0) {
+            lastKey = translates[language];
+            keys.forEach(key => {
+                lastKey = lastKey[key];
+            })
+            element.innerText = lastKey;
         } else {
-            document.getElementById("slideshowItems").innerHTML += `
-            <article class="slideshow-item">
-                <img src="assets/images/${imagenes[x + 1]}.png" style="height: 12em; width: 12em;">
-                <article class="slideshow-item-text">
-                    <span class="slideshow-item-title">${titulos[x + 1]}</span>
-
-                    <span class="slideshow-item-desc">${textos[x + 1]}<span>
-                </article>
-            </article>
-            `
+            element.innerText = translates[language][key];
         }
-    }
+        //? Friendly reminder to myself of the future:
+        //* don't be a god damn lazy and fix it or remove it. U fool 😾.
+        /*
+        ! @Deprecated
+        //! let content = element.innerText.split(' ');
+        //! let newContent = '';
+        //! let pattern = /(?<=\{).+?(?=\})/;
+        //! content.filter(variable => pattern.test(variable)).forEach(word => {
+        //!     let key = pattern.exec(word)[0];
+        //!     newContent += translates[language][key] + ' ';
+        //! })
+        //! element.innerText = newContent;
+        */
+    })
 }
 
-function actualizarDatos() {
-    cambiarImagen(true)
-    var edad = new Date().getMonth() >= 11 && new Date().getDay() >= 23 ? new Date().getFullYear() - 2001 : new Date().getFullYear() - 2002
-    document.getElementById("personalInfoEdad").textContent = document.getElementById("personalInfoEdad").textContent.replace("{edad}", edad)
-}
+//? Swiper
+const swiper = new Swiper('.swiper', {
+    effect: "cards",
+    cardsEffect: {
+        rotate: false,
+    },
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    //loop: true,
+    autoplay: {
+        delay: 5000,
+    },
+});
