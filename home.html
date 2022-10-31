@@ -3,12 +3,14 @@
 <!--
     Most of the icons are from https://simpleicons.org/
 -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ariel Silva</title>
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home.mobile.css">
     <link rel="stylesheet" href="styles/loader.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -29,7 +31,8 @@
         <h1 style="margin: 4vh 0vh 2vh 0vh; font-size: 2.5rem; border-bottom: 2px solid var(--font-color);">Ariel Silva
         </h1>
         <section class="reach-me" style="display: flex;">
-            <div onclick="window.open('https://twitter.com/Alwexisss', '_blank');" class="social-media" style="background-color: #1DA1F2">
+            <div onclick="window.open('https://twitter.com/Alwexisss', '_blank');" class="social-media"
+                style="background-color: #1DA1F2">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>Twitter</title>
                     <path
@@ -37,7 +40,8 @@
                 </svg>
                 <span>Twitter</span>
             </div>
-            <div onclick="window.open('https://www.instagram.com/alwexis._/', '_blank');" class="social-media" style="background-color: #C13584;">
+            <div onclick="window.open('https://www.instagram.com/alwexis._/', '_blank');" class="social-media"
+                style="background-color: #C13584;">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>Instagram</title>
                     <path
@@ -45,7 +49,8 @@
                 </svg>
                 <span>Instagram</span>
             </div>
-            <div onclick="window.open('https://discord.com/users/776040999482032158', '_blank');" class="social-media" style="background-color: #7289d9">
+            <div onclick="window.open('https://discord.com/users/776040999482032158', '_blank');" class="social-media"
+                style="background-color: #7289d9">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>Discord</title>
                     <path
@@ -53,7 +58,8 @@
                 </svg>
                 <span>Discord</span>
             </div>
-            <div onclick="window.open('https://github.com/Alwexis', '_blank');" class="social-media" style="background-color: #414141">
+            <div onclick="window.open('https://github.com/Alwexis', '_blank');" class="social-media"
+                style="background-color: #414141">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>GitHub</title>
                     <path
@@ -61,7 +67,8 @@
                 </svg>
                 <span>GitHub</span>
             </div>
-            <div onclick="window.open('https://www.linkedin.com/in/ariel-silva-rivera-a98b41223', '_blank');" class="social-media" style="background-color: #007bb5">
+            <div onclick="window.open('https://www.linkedin.com/in/ariel-silva-rivera-a98b41223', '_blank');"
+                class="social-media" style="background-color: #007bb5">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>LinkedIn</title>
                     <path
@@ -204,7 +211,7 @@
                 </div>
             </section>
         </section>
-        <section id="experience">
+        <section id="experience-desk">
             <h2 key="experiencia titulo" class="lang_toggleable">{what-do-i-know}</h2>
             <section class="work-exp-wrapper">
                 <div class="work-exp-card">
@@ -226,11 +233,40 @@
                 </div>
             </section>
         </section>
+        <section id="experience-mobile">
+            <h2 key="experiencia titulo" class="lang_toggleable">{what-do-i-know}</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="work-exp-card">
+                            <img src="./assets/images/DuocUC_Logo.png">
+                            <div class="work-exp-card-info">
+                                <div>
+                                    <span key="experiencia experiencias 0 titulo" class="lang_toggleable">
+                                        {experience}
+                                    </span>
+                                    <p key="experiencia experiencias 0 fecha" class="lang_toggleable">{experience}</p>
+                                </div>
+                                <span key="experiencia experiencias 0 puesto" class="lang_toggleable">
+                                    {experience}
+                                </span>
+                                <p key="experiencia experiencias 0 desc" class="lang_toggleable">
+                                    {experience}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="work-exp-wrapper">
+
+            </section>
+        </section>
         <section id="portfolio">
             <h2 key="portafolio titulo" class="lang_toggleable">{portfolio}</h2>
             <div class="portfolio-post-data">
                 <div onclick="loadRepositories()">
-                    <h3 key="portafolio filtrado" class="lang_toggleable filter active">{portfolio}</h3> 
+                    <h3 key="portafolio filtrado" class="lang_toggleable filter active">{portfolio}</h3>
                     <span class="material-symbols-outlined filter-icon">filter_list_off</span>
                 </div>
                 <p key="portafolio postdata" class="lang_toggleable">{portfolio}</p>

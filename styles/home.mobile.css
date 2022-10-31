@@ -1,7 +1,6 @@
 @import "./fonts.css";
 
-@media (min-width: 950px) {
-
+@media (max-width: 950px) {
     /*? Variables */
     :root {
         --font-color: #f7f8fa;
@@ -216,21 +215,21 @@
 
     .swipers {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .swipers-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0vh 8vh;
-    }
-
-    #experience-mobile {
-        display: none;
+        margin: 4vh 8vh;
     }
 
     #experience-desk {
+        display: none;
+    }
+
+    #experience-mobile {
         margin-top: 4vh;
         display: flex;
         flex-direction: column;
@@ -240,7 +239,7 @@
         padding: 10vh 0vh;
     }
 
-    #experience-desk h2 {
+    #experience-mobile h2 {
         border-bottom: 1px solid;
         padding: 0vh 1.5vh;
         margin-bottom: 0.5vh;
@@ -248,19 +247,19 @@
         cursor: default;
     }
 
-    .work-exp-wrapper {
+    #experience-mobile .swiper {
         margin-top: 2vh;
         display: flex;
         flex-direction: column;
         width: 60vw;
+        height: fit-content;
         align-items: center;
     }
 
     .work-exp-card {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        border: 1.5px solid var(--icons-border);
         cursor: pointer;
         padding: 0vh;
     }
@@ -268,44 +267,44 @@
     .work-exp-card img {
         width: 16vh;
         height: 16vh;
-        border-right: 1px solid var(--icons-border);
+        margin: 1vh;
     }
 
     .work-exp-card-info {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
-        margin-left: 2vh;
     }
 
     .work-exp-card-info div {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         height: 4vh;
         align-items: center;
+        margin: 0vh 0vh 1.5vh 0vh;
     }
 
     .work-exp-card-info span {
         font-weight: 800;
-        font-size: 3vh;
-        color: var(--title-color)
+        font-size: 2.2vh;
+        color: var(--title-color);
+        text-align: center;
     }
 
     .work-exp-card-info p {
-        margin: 2vh 0vh 0vh 0vh;
         font-size: 2vh;
-        padding-right: 1vh;
         word-break: break-word;
         white-space: normal;
+        text-align: center;
     }
 
     .work-exp-card-info div span {
-        font-size: 2.5vh;
+        font-size: 2vh;
         color: var(--font-color)
     }
 
     .work-exp-card-info div p {
-        font-size: 2.5vh;
+        font-size: 2vh;
         margin: 0vh 0vh 0vh 2vh;
     }
 
@@ -365,7 +364,7 @@
     }
 
     .portfolio-content {
-        width: 24vw;
+        width: 90vw;
         margin: 1.5vh;
         cursor: pointer;
         transition: ease-in-out 0.1s;
