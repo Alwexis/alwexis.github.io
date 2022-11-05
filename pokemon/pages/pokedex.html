@@ -87,7 +87,10 @@
                             <input class="gen-checkbox" id="filter-8-gen" name="filter-8-gen" type="checkbox">
                             <label for="filter-8-gen">VIII</label>
                         </div>
-                        <span onclick="loadPokemons();">Aplicar</span>
+                        <div disabled="false" id="filter-button">
+                            <span  onclick="loadPokemons();">Aplicar</span>
+                            <span class="loader"></span>
+                        </div>
                     </div>
                 </div>
             </section>

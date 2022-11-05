@@ -62,6 +62,9 @@ async function filterPokemon(e) {
 
 loadPokemons();
 async function loadPokemons() {
+    let filterButton = document.getElementById('filter-button');
+    if (filterButton.getAttribute('disabled') == 'true') return;
+    filterButton.setAttribute('disabled', 'true');
     document.getElementById('pokemon-wrapper').innerHTML = '';
     let links = [];
     let gen_checkboxes = document.getElementsByClassName('gen-checkbox');
@@ -91,6 +94,7 @@ async function loadPokemons() {
         }
         document.getElementById('pokemon-wrapper').appendChild(createPokemonElement(pokemonData));
     }
+    filterButton.setAttribute('disabled', 'false');
 }
 
 function createPokemonElement(data) {

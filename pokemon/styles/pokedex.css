@@ -1,5 +1,6 @@
 @import './fonts.css';
 @import './variables.css';
+@import './../../styles/loader.css';
 
 img {
     pointer-events: none
@@ -253,12 +254,35 @@ main {
     margin: 0vh 2vh 0vh 0vh;
 }
 
-#config .filters .checkboxes span {
+#filter-button[disabled=false] span:not(.loader) {
     border: 1px solid;
     padding: 0.25vh 1vh;
     background-color: #ffffff21;
-    margin: 0vh 4vh;
+    margin: 0vh 2vh;
     cursor: pointer;
+}
+
+#filter-button[disabled=true] span:not(.loader) {
+    border: 1px solid;
+    padding: 0.25vh 1vh;
+    background-color: #ffffff21;
+    color: rgb(244, 30, 30);
+    margin: 0vh 2vh;
+    cursor: pointer;
+}
+
+#filter-button[disabled=true] .loader {
+    display: inline-block;
+}
+
+#filter-button[disabled=false] .loader {
+    display: none;
+}
+
+#filter-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #pokemon {
