@@ -1,0 +1,396 @@
+@import "./fonts.css";
+
+@media (min-width: 950px) {
+
+    /*? Variables */
+    :root {
+        --font-color: #f7f8fa;
+        --icons-border: rgba(245, 245, 245, 0.4);
+        --bg: #1C1E1F;
+        --title-color: #F9AC53;
+        --slider-bg: #141414;
+        /** Deshabilitar la selección */
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    body {
+        background-color: var(--bg);
+        transition: all 0.15s ease-in-out;
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav .options span {
+        margin: 0vh 1.5vh;
+        cursor: pointer;
+    }
+
+    main {
+        font-family: cozette;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--font-color);
+    }
+
+    .options span {
+        color: var(--font-color);
+    }
+
+    .social-media span {
+        margin-left: 1vh;
+        display: none;
+    }
+
+    .social-media:hover span {
+        display: inline;
+    }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        border-radius: 2vh;
+        padding: 1vh;
+        margin: 0vh 1vh;
+        color: whitesmoke;
+        cursor: pointer;
+        border: 1px solid var(--icons-border);
+        box-shadow: 0px 0px 5px 2px var(--icons-border);
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .social-media:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .social-media:nth-child(2) {
+        animation-delay: 0.25s;
+    }
+
+    .social-media:nth-child(3) {
+        animation-delay: 0.5s;
+    }
+
+    .social-media:nth-child(4) {
+        animation-delay: 0.75s;
+    }
+
+    .social-media:nth-child(5) {
+        animation-delay: 1s;
+    }
+
+    .social-media svg {
+        width: 3.5vh;
+        height: 3.5vh;
+        fill: whitesmoke;
+    }
+
+    @keyframes floating {
+        0% {
+            transform: translate(0, 0px);
+        }
+
+        50% {
+            transform: translate(0, 2.5px);
+        }
+
+        100% {
+            transform: translate(0, -0px);
+        }
+    }
+
+    .contacto {
+        margin-top: 2vh;
+        padding: 1vh 1.5vh 0vh 1.5vh;
+        border-top: 1px solid var(--font-color);
+        animation-name: intermitente;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes intermitente {
+
+        0%,
+        50% {
+            opacity: 1;
+        }
+
+        60% {
+            opacity: 0.9
+        }
+
+        70% {
+            opacity: 0.8
+        }
+
+        80% {
+            opacity: 0.7
+        }
+
+        90% {
+            opacity: 0.6
+        }
+
+        100% {
+            opacity: 0.5
+        }
+    }
+
+    #about-me {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10vh 0vh;
+    }
+
+    #about-me h2 {
+        border-bottom: 1px solid;
+        padding: 0vh 1.5vh;
+        margin-bottom: 0.5vh;
+        color: var(--title-color);
+        cursor: default;
+    }
+
+    #about-me p {
+        text-align: center;
+        word-break: break-word;
+        white-space: break-spaces;
+    }
+
+    #what-do-i-know {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80vw;
+        border-top: 1px solid var(--title-color);
+        padding: 10vh 0vh;
+    }
+
+    #what-do-i-know h2 {
+        border-bottom: 1px solid;
+        padding: 0vh 1.5vh;
+        margin-bottom: 0.5vh;
+        color: var(--title-color);
+        cursor: default;
+    }
+
+    .swiper {
+        width: 24vh;
+        height: 24vh;
+    }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--title-color);
+        background-color: var(--slider-bg);
+        color: var(--font-color);
+    }
+
+    .swiper-slide svg {
+        fill: var(--font-color);
+        width: 16vh;
+    }
+
+    .swiper-slide span {
+        color: var(--title-color);
+        font-size: 2.5vh;
+        font-weight: 800;
+        border-bottom: 1px solid;
+        margin-top: 1vh;
+        padding: 0vh 1.5vh 0.5vh 1.5vh;
+    }
+
+    .swipers {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .swipers-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0vh 8vh;
+    }
+
+    #experience-mobile {
+        display: none;
+    }
+
+    #experience-desk {
+        margin-top: 4vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+        border-top: 1px solid var(--title-color);
+        padding: 10vh 0vh;
+    }
+
+    #experience-desk h2 {
+        border-bottom: 1px solid;
+        padding: 0vh 1.5vh;
+        margin-bottom: 0.5vh;
+        color: var(--title-color);
+        cursor: default;
+    }
+
+    .work-exp-wrapper {
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        align-items: center;
+    }
+
+    .work-exp-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1.5px solid var(--icons-border);
+        cursor: pointer;
+        padding: 0vh;
+    }
+
+    .work-exp-card img {
+        width: 16vh;
+        height: 16vh;
+        border-right: 1px solid var(--icons-border);
+    }
+
+    .work-exp-card-info {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 2vh;
+    }
+
+    .work-exp-card-info div {
+        display: flex;
+        flex-direction: row;
+        height: 4vh;
+        align-items: center;
+    }
+
+    .work-exp-card-info span {
+        font-weight: 800;
+        font-size: 3vh;
+        color: var(--title-color)
+    }
+
+    .work-exp-card-info p {
+        margin: 2vh 0vh 0vh 0vh;
+        font-size: 2vh;
+        padding-right: 1vh;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .work-exp-card-info div span {
+        font-size: 2.5vh;
+        color: var(--font-color)
+    }
+
+    .work-exp-card-info div p {
+        font-size: 2.5vh;
+        margin: 0vh 0vh 0vh 2vh;
+    }
+
+    #portfolio {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80vw;
+        border-top: 1px solid var(--title-color);
+        padding: 10vh 0vh;
+    }
+
+    #portfolio h2 {
+        border-bottom: 1px solid;
+        padding: 0vh 1.5vh;
+        margin-bottom: 1.5vh;
+        color: var(--title-color);
+        cursor: default;
+    }
+
+    .portfolio-post-data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-post-data div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .portfolio-post-data div h3 {
+        margin: 4vh 4vh;
+        transition: all ease-in-out 0.1s;
+        margin-right: 1vh;
+    }
+
+    .portfolio-post-data div h3.active {
+        color: #F56B90;
+        border-bottom: 1px solid;
+        padding: 0vh 1vh 0vh 1vh;
+    }
+
+    .portfolio-post-data p {
+        margin: 0vh 2vh 6vh 2vh;
+        text-align: center;
+    }
+
+    .portafolio-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio-content {
+        width: 24vw;
+        margin: 1.5vh;
+        cursor: pointer;
+        transition: ease-in-out 0.1s;
+        border: 1px solid var(--title-color);
+    }
+
+    .portfolio-content:hover {
+        transform: scale(105%);
+        margin: 2.5vh;
+    }
+
+    #loader2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #loader2.loaded {
+        display: none;
+    }
+
+    #loader2 .push-pop {
+        position: relative;
+    }
+
+    #loader2 span {
+        margin-top: -6vh;
+    }
+}

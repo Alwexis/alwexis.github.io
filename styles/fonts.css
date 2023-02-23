@@ -1,30 +1,231 @@
-/*? Cozette */
+/*  AlteHaasGrotesk */
 @font-face {
-    font-family: cozette;
-    src: url(./../assets/fonts/Cozette.ttf);
+    font-family: 'Alte Haas Grotesk';
+    src: url('../assets/fonts/AlteHaasGroteskRegular.ttf');
 }
 
-/*? Camingo */
+/* Helvetica */
 @font-face {
-    font-family: 'Camingo Code';
-    src: url(./../assets/fonts/CamingoCode-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Camingo Code';
-    font-style: italic;
-    src: url(./../assets/fonts/CamingoCode-Italic.ttf);
+    font-family: 'Helvetica';
+    src: url('../assets/fonts/Helvetica.ttf');
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Camingo Code';
-    font-style: italic;
+    font-family: 'Helvetica';
+    src: url('../assets/fonts/Helvetica-Bold.ttf');
     font-weight: bold;
-    src: url(./../assets/fonts/CamingoCode-BoldItalic.ttf);
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Camingo Code';
-    font-weight: bold;
-    src: url(./../assets/fonts/CamingoCode-Bold.ttf);
+    font-family: 'Helvetica';
+    src: url('../assets/fonts/Helvetica-Oblique.ttf');
+    font-weight: normal;
+    font-style: italic;
 }
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../assets/fonts/Helvetica-BoldOblique.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../assets/fonts/Helvetica-Light.ttf');
+    font-weight: lighter;
+}
+
+/* VCR Mono */
+
+@font-face {
+    font-family: 'vcr mono';
+    src: url('../assets/fonts/VCR_OSD_MONO.ttf');
+}
+
+/* Odachi */
+@font-face {
+    font-family: 'Odachi';
+    src: url('../assets/fonts/Odachi.ttf');
+}
+
+/* Aeroport Mono */
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../assets/fonts/Aeroport-Light.ttf');
+    font-weight: 100, 200, 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aeroport Mono';
+    src: url('../assets/fonts/AeroportMono.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../assets/fonts/Aeroport-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../assets/fonts/Aeroport-LightItalic.ttf');
+    font-weight: 100, 200, 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../assets/fonts/Aeroport-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../assets/fonts/Aeroport-MediumItalic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../assets/fonts/Aeroport.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../assets/fonts/Aeroport-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../assets/fonts/Aeroport-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* GopherMono */
+@font-face {
+    font-family: 'Gopher Mono';
+    src: url('../assets/fonts/GopherMono-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gopher Mono Extra';
+    src: url('../assets/fonts/GopherMono-ExtraBoldItalic.ttf');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gopher Mono';
+    src: url('../assets/fonts/GopherMono-BlackItalic.ttf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gopher Mono';
+    src: url('../assets/fonts/GopherMono-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gopher Mono';
+    src: url('../assets/fonts/GopherMono-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gopher Mono';
+    src: url('../assets/fonts/GopherMono-MediumItalic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gopher Mono';
+    src: url('../assets/fonts/GopherMono-ThinItalic.ttf');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gopher Mono Semi';
+    src: url('../assets/fonts/GopherMono-SemiBoldItalic.ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gopher Mono';
+    src: url('../assets/fonts/GopherMono-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gopher Mono';
+    src: url('../assets/fonts/GopherMono-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gopher Mono';
+    src: url('../assets/fonts/GopherMono-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gopher Mono Extra';
+    src: url('../assets/fonts/GopherMono-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gopher Mono';
+    src: url('../assets/fonts/GopherMono-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gopher Mono Semi';
+    src: url('../assets/fonts/GopherMono-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gopher Mono';
+    src: url('../assets/fonts/GopherMono-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gopher Mono';
+    src: url('../assets/fonts/GopherMono-Thin.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
