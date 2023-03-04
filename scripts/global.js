@@ -5,12 +5,28 @@ let __ACTUAL_SCROLLING__ = 0;
 let __LAST_SCROLLING__ = 0;
 let __ACTUAL_PAGE__ = 0;
 let __CHANGING_PAGE__ = true;
-const __PAGES__ = [
-    'index',
-    'about',
-    'projects',
-    'experience'
-];
+let __PAGES__;
+if (window.location.host === '') {
+    __PAGES__ = [
+        'index',
+        'about',
+        'projects',
+        'experience'
+    ];
+} else {
+    __PAGES__ = [
+        '',
+        'about',
+        'projects',
+        'experience'
+    ];
+}
+//const __PAGES__ = [
+//    'index',
+//    'about',
+//    'projects',
+//    'experience'
+//];
 
 /* Page Transition */
 function changePage(page, confirm) {
