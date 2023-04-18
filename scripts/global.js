@@ -38,6 +38,7 @@ function changePage(page, confirm) {
         restartInterval();
         clearInterval(__scrollingInterval__);
         __CHANGING_PAGE__ = true;
+        console.log('yeah... confirmed')
         if (page == '') {
             window.location.href = '/'
         } else {
