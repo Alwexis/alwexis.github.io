@@ -32,18 +32,11 @@ if (window.location.host === '') {
 function changePage(page, confirm) {
     __PAGE__ = page;
     __TRANSITION_SHADOW__.classList.toggle('transition');
-    console.log(__PAGE__);
-    console.log(page);
     if (confirm) {
         restartInterval();
         clearInterval(__scrollingInterval__);
         __CHANGING_PAGE__ = true;
-        console.log('yeah... confirmed')
-        if (page == '') {
-            window.location.href = '/'
-        } else {
-            window.location.replace('./' + page + '.html')
-        }
+        page == '' ? window.location.href = '/' : window.location.replace('./' + page + '.html');
     }
 }
 
@@ -99,7 +92,8 @@ window.onwheel = (e) => {
 
 __BODY__.addEventListener('animationstart', (e) => {
     if (e.animationName === 'changePageTransition') {
-        if (__PAGE__ === '') return;
+        // I was losing my mind trying to fix and that was the problem of everything FU
+        // if (__PAGE__ === '') return;
         setTimeout(() => {
             changePage(__PAGE__, true);
         }, 400);
