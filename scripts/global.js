@@ -38,7 +38,7 @@ function changePage(page, confirm) {
         __CHANGING_PAGE__ = true;
         page != '' ? window.location.replace('./' + page + '.html')
             :
-        window.location = '/';
+        window.location.href = '/';
     }
 }
 
