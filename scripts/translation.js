@@ -169,7 +169,7 @@ function getTranslation(keys) {
 }
 
 function translatePage(onLoad) {
-  const langData = localStorage.getItem('lang');
+  let langData = localStorage.getItem('lang');
   if (!langData) {
     localStorage.setItem('lang', __LANGUAGE__);
     langData = __LANGUAGE__;

@@ -36,7 +36,9 @@ function changePage(page, confirm) {
         restartInterval();
         clearInterval(__scrollingInterval__);
         __CHANGING_PAGE__ = true;
-        window.location.replace('./' + page + '.html');
+        page != '' ? window.location.replace('./' + page + '.html')
+            :
+        window.location = '/';
     }
 }
 
