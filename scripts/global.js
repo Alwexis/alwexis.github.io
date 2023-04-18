@@ -38,9 +38,11 @@ function changePage(page, confirm) {
         restartInterval();
         clearInterval(__scrollingInterval__);
         __CHANGING_PAGE__ = true;
-        page != '' ? window.location.replace('./' + page + '.html')
-            :
-        window.location.href = '/';
+        if (page == '') {
+            window.location.href = '/'
+        } else {
+            window.location.replace('./' + page + '.html')
+        }
     }
 }
 
