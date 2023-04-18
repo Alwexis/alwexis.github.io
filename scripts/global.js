@@ -32,6 +32,8 @@ if (window.location.host === '') {
 function changePage(page, confirm) {
     __PAGE__ = page;
     __TRANSITION_SHADOW__.classList.toggle('transition');
+    console.log(__PAGE__);
+    console.log(page);
     if (confirm) {
         restartInterval();
         clearInterval(__scrollingInterval__);
