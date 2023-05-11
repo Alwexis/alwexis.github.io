@@ -40,7 +40,7 @@ const __TRANSLATIONS__ = {
           ]
         },
         {
-          "date": "Ener. 2023 - Actualidad",
+          "date": "Ener. 2023 - Mar. 2023",
           "company": "CETECOM",
           "jobtitle": "Mantención general de Equipos Tecnológicos",
           "description": "Me encuentro actualmente realizando mi práctica laboral en CETECOM. Me desempeño como técnico de mantención de equipos tecnológicos, en la cual me encargo de realizar la mantención de los equipos de la 'empresa', tanto de hardware como de software, además de realizar atención cliente ya sea de forma presencial o telefónica.",
@@ -54,6 +54,25 @@ const __TRANSLATIONS__ = {
             "Sistemas Operativos",
             "Hardware",
             "Software"
+          ]
+        },
+        {
+          "date": "Mar. 2023 - Actualidad",
+          "company": "CITT",
+          "jobtitle": "Líder Track Desarrollo Móvil",
+          "description": "Cumplo con el rol de Líder en el Track (o taller) de Desarrollo de Aplicaciones Móviles en el CITT de DuocUC Sede Concepción.",
+          "activities": [
+            "Enseño bases de la Programación.",
+            "Enseño cómo desarrollar aplicaciones móviles con Ionic.",
+            "Enseño contenido de Desarrollo Web."
+          ],
+          "skills": "Habilidades Empleadas",
+          "skills_list": [
+            "TypeScript",
+            "Angular",
+            "Ionic",
+            "RestAPI",
+            "Android Studio"
           ]
         }
       ]
@@ -110,7 +129,7 @@ const __TRANSLATIONS__ = {
           ]
         },
         {
-          "date": "Ener. 2023 - Present",
+          "date": "Jan. 2023 - March. 2023",
           "company": "CETECOM",
           "jobtitle": "Technical Service",
           "description": "I am currently doing my 'work practice' at CETECOM. I work as a technical maintenance of technological equipment, in which I am responsible for maintaining the company's equipment, both hardware and software, as well as providing customer service either in person or by phone.",
@@ -124,6 +143,25 @@ const __TRANSLATIONS__ = {
             "OS",
             "Hardware",
             "Software"
+          ]
+        },
+        {
+          "date": "March. 2023 - Now",
+          "company": "CITT",
+          "jobtitle": "Mobile Apps Development Track Leader",
+          "description": "I play the role of Leader in the Mobile Apps Development Track (or course) in CITT at DuocUC Concepcion's Campus.",
+          "activities": [
+            "Taught programming basics",
+            "Taught how to develop Mobile Apps with Ionic",
+            "Taught Web Development basics",
+          ],
+          "skills": "Habilidades Empleadas",
+          "skills_list": [
+            "TypeScript",
+            "Angular",
+            "Ionic",
+            "RestAPI",
+            "Android Studio"
           ]
         }
       ]
