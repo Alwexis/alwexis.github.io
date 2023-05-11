@@ -22,6 +22,17 @@ const __EXPERIENCES__ = {
         skills_list: 'experience.experiences.1.skills_list',
         link: 'https://www.duoc.cl',
     },
+    3: {
+        id: 2,
+        title: 'experience.experiences.2.jobtitle',
+        company: 'experience.experiences.2.company',
+        date: 'experience.experiences.2.date',
+        description: 'experience.experiences.2.description',
+        activities: 'experience.experiences.2.activities',
+        skills: 'experience.experiences.2.skills',
+        skills_list: 'experience.experiences.2.skills_list',
+        link: 'https://www.duoc.cl',
+    },
 }
 let __ACTUAL_ACHIEVEMENT__ = 1;
 const __ACHIEVEMENTS__ = {

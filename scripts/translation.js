@@ -23,20 +23,22 @@ const __TRANSLATIONS__ = {
       "title": "Experiencia",
       "experiences": [
         {
-          "date": "Sept. 2021 - Dic. 2021",
-          "company": "DuocUC",
-          "jobtitle": "Profesor de Ayudantías en Python",
-          "description": "Trabajé durante unos meses como profesor de clases de ayudantía en la asignatura de programación de Algoritmos y Estructuras de Datos en Python, en la cual enseñé a los alumnos las bases de la programación, tanto su estructura como su lógica, y también las bases de Python.",
+          "date": "Mar. 2023 - Actualidad",
+          "company": "CITT",
+          "jobtitle": "Líder Track Desarrollo Móvil",
+          "description": "Cumplo con el rol de Líder en el Track (o taller) de Desarrollo de Aplicaciones Móviles en el CITT de DuocUC Sede Concepción.",
           "activities": [
-            "Enseñé bases de la programación.",
-            "Enseñé Python para la resolución de problemas.",
-            "Enseñé a utilizar librerías (Numpy)."
+            "Enseño bases de la Programación.",
+            "Enseño cómo desarrollar aplicaciones móviles con Ionic.",
+            "Enseño contenido de Desarrollo Web."
           ],
           "skills": "Habilidades Empleadas",
           "skills_list": [
-            "Python",
-            "Numpy",
-            "Visual Studio Code"
+            "TypeScript",
+            "Angular",
+            "Ionic",
+            "RestAPI",
+            "Android Studio"
           ]
         },
         {
@@ -57,24 +59,22 @@ const __TRANSLATIONS__ = {
           ]
         },
         {
-          "date": "Mar. 2023 - Actualidad",
-          "company": "CITT",
-          "jobtitle": "Líder Track Desarrollo Móvil",
-          "description": "Cumplo con el rol de Líder en el Track (o taller) de Desarrollo de Aplicaciones Móviles en el CITT de DuocUC Sede Concepción.",
+          "date": "Sept. 2021 - Dic. 2021",
+          "company": "DuocUC",
+          "jobtitle": "Profesor de Ayudantías en Python",
+          "description": "Trabajé durante unos meses como profesor de clases de ayudantía en la asignatura de programación de Algoritmos y Estructuras de Datos en Python, en la cual enseñé a los alumnos las bases de la programación, tanto su estructura como su lógica, y también las bases de Python.",
           "activities": [
-            "Enseño bases de la Programación.",
-            "Enseño cómo desarrollar aplicaciones móviles con Ionic.",
-            "Enseño contenido de Desarrollo Web."
+            "Enseñé bases de la programación.",
+            "Enseñé Python para la resolución de problemas.",
+            "Enseñé a utilizar librerías (Numpy)."
           ],
           "skills": "Habilidades Empleadas",
           "skills_list": [
-            "TypeScript",
-            "Angular",
-            "Ionic",
-            "RestAPI",
-            "Android Studio"
+            "Python",
+            "Numpy",
+            "Visual Studio Code"
           ]
-        }
+        },
       ]
     },
     "achievements": {
@@ -112,20 +112,22 @@ const __TRANSLATIONS__ = {
       "title": "Experience",
       "experiences": [
         {
-          "date": "Sept. 2021 - Dec. 2021",
-          "company": "DuocUC",
-          "jobtitle": "Python Tutor",
-          "description": "I worked for a few months as a teaching assistant in the subject of Algorithms and Data Structures Programming in Python, in which I taught the students the basics of programming, both its structure and logic, and also the basics of Python.",
+          "date": "March. 2023 - Now",
+          "company": "CITT",
+          "jobtitle": "Mobile Apps Development Track Leader",
+          "description": "I play the role of Leader in the Mobile Apps Development Track (or course) in CITT at DuocUC Concepcion's Campus.",
           "activities": [
-            "I taught basics of programming.",
-            "I taught python for problem solving.",
-            "I taught how to use libraries (Numpy)."
+            "Taught programming basics",
+            "Taught how to develop Mobile Apps with Ionic",
+            "Taught Web Development basics",
           ],
-          "skills": "Empleated Skills",
+          "skills": "Habilidades Empleadas",
           "skills_list": [
-            "Python",
-            "Numpy",
-            "Visual Studio Code"
+            "TypeScript",
+            "Angular",
+            "Ionic",
+            "RestAPI",
+            "Android Studio"
           ]
         },
         {
@@ -146,24 +148,22 @@ const __TRANSLATIONS__ = {
           ]
         },
         {
-          "date": "March. 2023 - Now",
-          "company": "CITT",
-          "jobtitle": "Mobile Apps Development Track Leader",
-          "description": "I play the role of Leader in the Mobile Apps Development Track (or course) in CITT at DuocUC Concepcion's Campus.",
+          "date": "Sept. 2021 - Dec. 2021",
+          "company": "DuocUC",
+          "jobtitle": "Python Tutor",
+          "description": "I worked for a few months as a teaching assistant in the subject of Algorithms and Data Structures Programming in Python, in which I taught the students the basics of programming, both its structure and logic, and also the basics of Python.",
           "activities": [
-            "Taught programming basics",
-            "Taught how to develop Mobile Apps with Ionic",
-            "Taught Web Development basics",
+            "I taught basics of programming.",
+            "I taught python for problem solving.",
+            "I taught how to use libraries (Numpy)."
           ],
-          "skills": "Habilidades Empleadas",
+          "skills": "Empleated Skills",
           "skills_list": [
-            "TypeScript",
-            "Angular",
-            "Ionic",
-            "RestAPI",
-            "Android Studio"
+            "Python",
+            "Numpy",
+            "Visual Studio Code"
           ]
-        }
+        },
       ]
     },
     "achievements": {
