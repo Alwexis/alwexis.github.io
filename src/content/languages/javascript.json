@@ -1,0 +1,21 @@
+{
+    "id": "javascript",
+    "name": "JavaScript",
+    "icon": "javascript",
+    "certifications": [
+        {
+            "name": "Fundamentos de JavaScript",
+            "provider": "Platzi",
+            "url": "",
+            "file": "certificates/diploma-javascript.pdf",
+            "thumbnail": "certificates/thumbnails/diploma-javascript.webp"
+        },
+        {
+            "name": "Manipulación del DOM",
+            "provider": "Platzi",
+            "url": "",
+            "file": "certificates/diploma-javascript-document-object-model.pdf",
+            "thumbnail": "certificates/thumbnails/diploma-javascript-document-object-model.webp"
+        }
+    ]
+}

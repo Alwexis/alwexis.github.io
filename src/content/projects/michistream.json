@@ -1,0 +1,14 @@
+{
+    "id": "michistream",
+    "name": "Michistream",
+    "description": "Michistream is a streaming Web App to watch series and movies. I used webscraping to get the data of the movies and series, as well as the images and the video links.",
+    "thumbnail": "",
+    "repository": "https://github.com/Alwexis/michistream",
+    "technologies": [
+        { "id": "javascript", "name": "JavaScript", "icon": "javascript" },
+        { "id": "astro", "name": "Astro", "icon": "astro" },
+        { "id": "tailwindcss", "name": "TailwindCSS", "icon": "tailwindcss" },
+        { "id": "nodejs", "name": "Node.js", "icon": "nodejs" },
+        { "id": "puppeteer", "name": "Puppeteer", "icon": "puppeteer" }
+    ]
+}

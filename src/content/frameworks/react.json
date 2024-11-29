@@ -1,0 +1,28 @@
+{
+    "id": "react",
+    "name": "React",
+    "icon": "react",
+    "certifications": [
+        {
+            "name": "Curso de React.js",
+            "provider": "Platzi",
+            "url": "",
+            "file": "certificates/diploma-react.pdf",
+            "thumbnail": "certificates/thumbnails/diploma-react.webp"
+        },
+        {
+            "name": "React.js Avanzado",
+            "provider": "Platzi",
+            "url": "",
+            "file": "certificates/diploma-react-avanzado.pdf",
+            "thumbnail": "certificates/thumbnails/diploma-react-avanzado.webp"
+        },
+        {
+            "name": "Framework Valley: React",
+            "provider": "Codédex",
+            "url": "https://www.credential.net/4a0d73a5-1e3d-489a-bb8f-d8b45271dd0b",
+            "file": "certificates/Framework Valley React.pdf",
+            "thumbnail": "certificates/thumbnails/Framework Valley React.webp"
+        }
+    ]
+}

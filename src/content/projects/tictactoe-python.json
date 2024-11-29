@@ -1,0 +1,10 @@
+{
+    "id": "tictactoe-python",
+    "name": "Tic Tac Toe Python",
+    "description": "My final project for the Codedex Python course. A simple Tic Tac Toe terminal game, with the keyboard arrow keys as a controller.",
+    "thumbnail": "",
+    "repository": "https://github.com/Alwexis/Codedex-Python-Final-Project",
+    "technologies": [
+        { "id": "python", "name": "Python", "icon": "python" }
+    ]
+}

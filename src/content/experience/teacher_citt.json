@@ -1,0 +1,35 @@
+{
+    "id": "teacher_citt",
+    "type": "work",
+    "name": "Teacher",
+    "role": "Teacher",
+    "description": "I serve as the Leader and Instructor of the Mobile Application Development Workshop at CITT DuocUC Concepción. During my leadership in this track, I have taught over 100 students. I have led, managed, developed, and completed four projects, one of which participated in a state-funded grant competition. I have taken part in various educational activities and delivered talks about technology at schools and universities. Additionally, I have contributed to the development of internal applications for CITT and achieved recognition in the 2024 \"Demoday\", winning the \"Social Impact\" category and securing second place in \"Project of the Year\" using my thesis project, SignAI (formerly HERMES).",
+    "startDate": "December 2022",
+    "endDate": "At present",
+    "difference": "2 years",
+    "company": {
+        "name": "CITT",
+        "url": "https://www.duoc.cl/escuela/informatica-telecomunicaciones/citt/"
+    },
+    "activities": [
+        "Teaching programming fundamentals",
+        "Teaching mobile application development using Ionic",
+        "Teaching advanced Web Development topics and frameworks",
+        "Leading, managing, and developing projects with students",
+        "Participating in various educational activities and talks",
+        "Contributing to the development of internal applications for CITT",
+        "Competing in multiple regional and national events (Hackathons, Demodays, Technology Fairs, etc.)",
+        "Winning the \"Social Impact\" category in the 2024 \"Demoday\""
+    ],
+    "skills": [
+        { "id": "typescript", "name": "Typescript", "icon": "typescript" },
+        { "id": "angular", "name": "Angular", "icon": "angular" },
+        { "id": "css", "name": "CSS", "icon": "css" },
+        { "id": "tailwindcss", "name": "TailwindCSS", "icon": "tailwindcss" },
+        { "id": "websockets", "name": "Websockets", "icon": "websockets" },
+        { "id": "androidstudio", "name": "AndroidStudio", "icon": "androidstudio" },
+        { "id": "figma", "name": "Figma", "icon": "figma" },
+        { "id": "mongodb", "name": "MongoDB", "icon": "mongodb" },
+        { "id": "express", "name": "Express", "icon": "express" }
+    ]
+}

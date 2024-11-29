@@ -1,0 +1,26 @@
+{
+    "id": "assistant_professor",
+    "type": "work",
+    "name": "Assistant Professor",
+    "role": "Assistant Professor",
+    "description": "During my first year of Engineering, I was an assistant professor at DuocUC, teaching the Algorithm Programming class, where I taught entry level Python and how to use libraries such as Numpy, Matplotlib and Pandas. During my assistantship classes the students' grades increased considerably, helping to improve their GPA.",
+    "startDate": "September 2021",
+    "endDate": "January 2022",
+    "difference": "4 months",
+    "company": {
+        "name": "DuocUC",
+        "url": "https://www.duoc.cl/"
+    },
+    "activities": [
+        "Teaching Python entry level",
+        "Teaching Numpy",
+        "Teaching Matplotlib",
+        "Teaching Pandas"
+    ],
+    "skills": [
+        { "id": "python", "name": "Python", "icon": "python" },
+        { "id": "numpy", "name": "Numpy", "icon": "numpy" },
+        { "id": "matplotlib", "name": "Matplotlib", "icon": "matplotlib" },
+        { "id": "pandas", "name": "Pandas", "icon": "pandas" }
+    ]
+}

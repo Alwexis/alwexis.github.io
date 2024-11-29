@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import About from '../components/About';
+import Stack from '../components/stack/Stack';
+import Projects from '../components/projects/Projects';
+import Experience from '../components/experience/Experience';
+
+import { getCollection } from 'astro:content';
+
+const _programming_lang = await getCollection("languages");
+const _programming_tools = await getCollection("tools");
+const _programming_frameworks = await getCollection("frameworks");
+const _programming_databases = await getCollection("databases");
+const _others = await getCollection("others");
+const stackData = {
+	languages: _programming_lang,
+	tools: _programming_tools,
+	frameworks: _programming_frameworks,
+	databases: _programming_databases,
+	others: _others
+};
+
+const projects = await getCollection("projects");
+const experience = await getCollection("experience");
+
+---
+
+<Layout title="Ariel Silva">
+	<main class="max-w-md md:max-w-2xl w-full grid min-h-dvh grid-rows-[auto_1fr_auto]">
+		<Header client:load page="home" classNames='animate-fade-down' />
+		<section id="about" class="min-h-screen h-fit flex flex-col">
+			<About client:load />
+			<Stack client:load stackData={stackData} />
+		</section>
+		<section id="projects" class="flex flex-col my-16">
+			<Projects client:load projects={projects} />
+		</section>
+		<section id="experience" class="flex flex-col mt-8 mb-8">
+			<Experience client:load experiences={experience} />
+		</section>
+		<Footer client:load classNames='animate-fade-up' />
+	</main>
+</Layout>

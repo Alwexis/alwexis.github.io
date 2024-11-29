@@ -1,0 +1,14 @@
+{
+    "id": "portfolio",
+    "name": "Portfolio",
+    "description": "My personal portfolio, built with Astro and React.",
+    "thumbnail": "",
+    "repository": "https://github.com/Alwexis/alwexis.github.io",
+    "url": "https://alwexis.me",
+    "technologies": [
+        { "id": "javascript", "name": "JavaScript", "icon": "javascript" },
+        { "id": "astro", "name": "Astro", "icon": "astro" },
+        { "id": "react", "name": "React", "icon": "react" },
+        { "id": "tailwindcss", "name": "TailwindCSS", "icon": "tailwindcss" }
+    ]
+}
