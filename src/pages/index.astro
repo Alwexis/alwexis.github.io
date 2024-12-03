@@ -6,6 +6,7 @@ import About from '../components/About';
 import Stack from '../components/stack/Stack';
 import Projects from '../components/projects/Projects';
 import Experience from '../components/experience/Experience';
+import Achievement from '../components/achievements/Achievement';
 
 import { getCollection } from 'astro:content';
 
@@ -24,7 +25,7 @@ const stackData = {
 
 const projects = await getCollection("projects");
 const experience = await getCollection("experience");
-
+const achievements = await getCollection("achievements");
 ---
 
 <Layout title="Ariel Silva">
@@ -34,11 +35,12 @@ const experience = await getCollection("experience");
 			<About client:load />
 			<Stack client:load stackData={stackData} />
 		</section>
-		<section id="projects" class="flex flex-col my-16">
+		<section id="projects" class="flex flex-col my-8">
 			<Projects client:load projects={projects} />
 		</section>
-		<section id="experience" class="flex flex-col mt-8 mb-8">
+		<section id="experience" class="flex flex-col mt-8 mb-16">
 			<Experience client:load experiences={experience} />
+			<Achievement client:load achievements={achievements} />
 		</section>
 		<Footer client:load classNames='animate-fade-up' />
 	</main>

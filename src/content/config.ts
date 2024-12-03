@@ -96,7 +96,7 @@ const projects = defineCollection({
         id: z.string(),
         name: z.string(),
         description: z.string(),
-        thumbnail: z.string(),
+        thumbnail: z.string().optional(),
         url: z.string().url().optional(),
         repository: z.string().url(),
         technologies: z.array(z.object({
@@ -111,6 +111,7 @@ const experience = defineCollection({
     type: 'data',
     schema: z.object({
         id: z.string(),
+        priority: z.number(),
         name: z.string(),
         type: z.string(),
         role: z.string(),
@@ -131,4 +132,21 @@ const experience = defineCollection({
     })
 })
 
-export const collections = { languages, frameworks, databases, tools, others, projects, experience };
+const achievements = defineCollection({
+    type: 'data',
+    schema: z.object({
+        id: z.string(),
+        priority: z.number(),
+        name: z.string(),
+        event: z.string(),
+        url: z.string().url().optional(),
+        description: z.string(),
+        date: z.string(),
+        company: z.object({
+            name: z.string(),
+            url: z.string().url().optional()
+        }),
+    })
+})
+
+export const collections = { languages, frameworks, databases, tools, others, projects, experience, achievements };

@@ -1,0 +1,11 @@
+{
+    "id": "demoday_2024",
+    "priority": 4,
+    "name": "First and Second place",
+    "event": "Demoday 2024",
+    "description": "My team and I participated in the 2024 Demoday in Santiago, Chile, where we presented our CAPSTONE project, SignAI. We achieved first place in the \"Social Impact\" category and second place in the \"Project of the Year\" category, competing against approximately 25 teams. Additionally, we generated interest, made connections, and made an impact on the company representatives who attended the event.",
+    "date": "27/11/2024",
+    "company": {
+        "name": "CITT"
+    }
+}

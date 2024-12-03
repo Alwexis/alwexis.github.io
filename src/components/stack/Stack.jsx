@@ -30,7 +30,7 @@ export default function Stack({ stackData }) {
             </h2>
             <section className="flex flex-col my-2">
                 <div className="flex flex-col mb-2">
-                    <h3 className="font-inter tracking-wider bg-gradient-to-r from-red-500/75 via-pink-400 to-indigo-600 text-transparent bg-clip-text text-lg">
+                    <h3 className="font-inter tracking-wider text-neutral-300 font-semibold text-lg">
                         Languages:
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2">
@@ -42,7 +42,7 @@ export default function Stack({ stackData }) {
                     </div>
                 </div>
                 <div className="flex flex-col my-2">
-                    <h3 className="font-inter tracking-wider bg-gradient-to-r from-red-500/75 via-pink-400 to-indigo-600 text-transparent bg-clip-text text-lg">
+                    <h3 className="font-inter tracking-wider text-neutral-300 font-semibold text-lg">
                         Frameworks:
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2">
@@ -54,7 +54,7 @@ export default function Stack({ stackData }) {
                     </div>
                 </div>
                 <div className="flex flex-col my-2">
-                    <h3 className="font-inter tracking-wider bg-gradient-to-r from-red-500/75 via-pink-400 to-indigo-600 text-transparent bg-clip-text text-lg">
+                    <h3 className="font-inter tracking-wider text-neutral-300 font-semibold text-lg">
                         Databases:
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2">
@@ -66,7 +66,7 @@ export default function Stack({ stackData }) {
                     </div>
                 </div>
                 <div className="flex flex-col my-2">
-                    <h3 className="font-inter tracking-wider bg-gradient-to-r from-red-500/75 via-pink-400 to-indigo-600 text-transparent bg-clip-text text-lg">
+                    <h3 className="font-inter tracking-wider text-neutral-300 font-semibold text-lg">
                         Tools:
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2">
@@ -78,7 +78,7 @@ export default function Stack({ stackData }) {
                     </div>
                 </div>
                 <div className="flex flex-col mt-2">
-                    <h3 className="font-inter tracking-wider bg-gradient-to-r from-red-500/75 via-pink-400 to-indigo-600 text-transparent bg-clip-text text-lg">
+                    <h3 className="font-inter tracking-wider text-neutral-300 font-semibold text-lg">
                         Others:
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2">

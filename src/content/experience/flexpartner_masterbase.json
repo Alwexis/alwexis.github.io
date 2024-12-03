@@ -1,0 +1,27 @@
+{
+    "priority": 3,
+    "id": "flexpartner_masterbase",
+    "type": "work",
+    "name": "Flex Partner",
+    "role": "Flex Partner",
+    "description": "I worked for Masterbase as a Flex Partner and participated in their internship program aimed at students nearing graduation from Computer Engineering or related fields. During my time there, my team and I developed Condomoonie, an application designed to streamline the management tasks of condominium administrators and their staff. Additionally, while at Masterbase, I identified previously unknown functionalities within the ecosystem as well as potential security vulnerabilities, which I subsequently reported to the team responsible for the design and development of the Masterbase ecosystem.",
+    "startDate": "September 2024",
+    "endDate": "December 2024",
+    "difference": "3 months",
+    "company": {
+        "name": "Masterbase",
+        "url": "https://masterbase.com/"
+    },
+    "activities": [
+        "Training and research to work with the Masterbase ecosystem",
+        "Proposing a project based on a real-world problem",
+        "Developing the application using the Masterbase ecosystem",
+        "Conducting research, creating videos, and preparing commercial presentations for the solution",
+        "Identifying and reporting new functionalities and potential security issues within the Masterbase ecosystem"
+    ],
+    "skills": [
+        { "id": "html", "name": "HTML", "icon": "html" },
+        { "id": "javascript", "name": "Javascript", "icon": "javascript" },
+        { "id": "css", "name": "CSS", "icon": "css" }
+    ]
+}

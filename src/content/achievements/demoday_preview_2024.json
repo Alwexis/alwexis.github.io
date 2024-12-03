@@ -1,0 +1,11 @@
+{
+    "id": "demoday_preview_2024",
+    "priority": 3,
+    "name": "Third place",
+    "event": "Preview Demoday 2024",
+    "description": "My team and I participated in the 2024 Preview Demoday, where we presented our CAPSTONE project, SignAI. We achieved third place overall out of approximately 25 participating teams.",
+    "date": "14/10/2024",
+    "company": {
+        "name": "CITT"
+    }
+}
