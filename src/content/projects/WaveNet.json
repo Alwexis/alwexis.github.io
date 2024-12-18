@@ -1,0 +1,17 @@
+{
+    "id": "wavenet",
+    "name": "WaveNet",
+    "description": "WaveNet is a 90s-inspired retro social network designed during a hackathon. The project draws heavy inspiration from the MegaMan StarForce video game series, blending retro aesthetics with a unique and engaging way to connect users. The goal was to replicate the simplicity, charm, and functionality of early internet technology while incorporating the concept of digital bonds central to MegaMan StarForce.",
+    "thumbnail": "",
+    "repository": "https://github.com/Alwexis/WaveNet",
+    "url": "https://alwexis-wavenet.vercel.app/",
+    "technologies": [
+        { "id": "javascript", "name": "Javascript", "icon": "javascript" },
+        { "id": "react", "name": "React", "icon": "react" },
+        { "id": "tailwindcss", "name": "TailwindCSS", "icon": "tailwindcss" },
+        { "id": "socket.io", "name": "Socket.io", "icon": "websockets" },
+        { "id": "fastapi", "name": "FastAPI", "icon": "fastapi" },
+        { "id": "mongodb", "name": "MongoDB", "icon": "mongodb" },
+        { "id": "firebase", "name": "Firebase", "icon": "firebase" }
+    ]
+}
