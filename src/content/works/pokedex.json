@@ -1,0 +1,19 @@
+{
+    "id": "pokedex",
+    "name": "Pokédex",
+    "priority": 4,
+    "description": "It's a WIP Pokédex that I'm developing. It's a project that includes a Deep Learning model to classify Pokémon images. My goal is to achieve a 90% accuracy rate in the first 151 Pokémon. Once the model is ready, I'll integrate it into a web or mobile application.",
+    "urls": [
+        { "title": "Repository", "url": "https://github.com/Alwexis/WaveNet" },
+        { "title": "Live Demo", "url": "https://alwexis-wavenet.vercel.app/" }
+    ],
+    "technologies": [
+        { "name": "Javascript", "icon": "javascript" },
+        { "name": "React", "icon": "react" },
+        { "name": "TailwindCSS", "icon": "tailwindcss" },
+        { "name": "Python", "icon": "fastapi" },
+        { "name": "FastAPI", "icon": "fastapi" },
+        { "name": "Tensorflow", "icon": "fastapi" },
+        { "name": "Keras", "icon": "fastapi" }
+    ]
+}

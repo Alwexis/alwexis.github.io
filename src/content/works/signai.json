@@ -1,0 +1,30 @@
+{
+    "id": "signai",
+    "name": "SignAI",
+    "priority": 1,
+    "description": "SignAI (formerly HERMES) is my CAPSTONE (final grade) project and a LCHs interpreter service. It was built with Artificial Intelligence to translate Sign Language into Text and Voice into Sign Language. The project includes a Deep Learning model, the Service (RESTAPI), a Developer Portal, the fully digitized Chilean Sign Language Dictionary in a MongoDB database, and a real-time communication app as an example for integration. The project won 1st place in the \"Social Impact\" category and 2nd place in the \"Project of the Year\" category at \"Demoday 2024\".",
+    "images": {
+        "gallery": [
+            { "src": "signai_demoday_2024_1.webp", "title": "Official Picture" },
+            { "src": "signai_demoday_2024_team.webp", "title": "Official Team Picture" }
+        ]
+    },
+    "urls": [
+        { "title": "Repository", "url": "https://github.com/Alwexis/SignAI" },
+        { "title": "Article", "url": "https://www.duoc.cl/?noticia_post_type=demo-day-2024-duoc-uc-creatividad-e-innovacion" }
+    ],
+    "technologies": [
+        { "name": "JavaScript", "icon": "javascript" },
+        { "name": "Astro", "icon": "astro" },
+        { "name": "React", "icon": "react" },
+        { "name": "TailwindCSS", "icon": "tailwindcss" },
+        { "name": "Firebase", "icon": "firebase" },
+        { "name": "MongoDB", "icon": "mongodb" },
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "Python", "icon": "python" },
+        { "name": "FastAPI", "icon": "fastapi" },
+        { "name": "TensorFlow", "icon": "tensorflow" },
+        { "name": "Keras", "icon": "keras" },
+        { "name": "WebSockets", "icon": "websockets" }
+    ]
+}

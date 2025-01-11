@@ -1,0 +1,16 @@
+{
+    "id": "mangacat",
+    "name": "Mangacat",
+    "priority": 7,
+    "description": "An Ionic Mobile app to read manga from mangadex.",
+    "urls": [
+        { "title": "repository", "url": "https://github.com/Alwexis/Mangacat" }
+    ],
+    "technologies": [
+        { "name": "Typescript", "icon": "typescript" },
+        { "name": "Angular", "icon": "angular" },
+        { "name": "Ionic", "icon": "ionic" },
+        { "name": "HTML", "icon": "html" },
+        { "name": "CSS", "icon": "css" }
+    ]
+}

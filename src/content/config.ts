@@ -1,106 +1,26 @@
 import { defineCollection, z } from "astro:content";
 
-const languages = defineCollection({
+const works = defineCollection({
     type: 'data',
     schema: z.object({
         id: z.string(),
         name: z.string(),
-        icon: z.string(),
-        certifications: z.array(
-            z.object({
-                name: z.string(),
-                provider: z.string(),
-                url: z.string(),
-                file: z.string(),
-                thumbnail: z.string()
-            }).optional()
-        )
-    })
-});
-
-const databases = defineCollection({
-    type: 'data',
-    schema: z.object({
-        id: z.string(),
-        name: z.string(),
-        icon: z.string(),
-        certifications: z.array(
-            z.object({
-                name: z.string(),
-                provider: z.string(),
-                url: z.string(),
-                file: z.string(),
-                thumbnail: z.string()
-            }).optional()
-        )
-    })
-});
-
-const frameworks = defineCollection({
-    type: 'data',
-    schema: z.object({
-        id: z.string(),
-        name: z.string(),
-        icon: z.string(),
-        certifications: z.array(
-            z.object({
-                name: z.string(),
-                provider: z.string(),
-                url: z.string(),
-                file: z.string(),
-                thumbnail: z.string()
-            }).optional()
-        )
-    })
-});
-
-const tools = defineCollection({
-    type: 'data',
-    schema: z.object({
-        id: z.string(),
-        name: z.string(),
-        icon: z.string(),
-        certifications: z.array(
-            z.object({
-                name: z.string(),
-                provider: z.string(),
-                url: z.string(),
-                file: z.string(),
-                thumbnail: z.string()
-            }).optional()
-        )
-    })
-});
-
-const others = defineCollection({
-    type: 'data',
-    schema: z.object({
-        id: z.string(),
-        name: z.string(),
-        icon: z.string(),
-        certifications: z.array(
-            z.object({
-                name: z.string(),
-                provider: z.string(),
-                url: z.string(),
-                file: z.string(),
-                thumbnail: z.string()
-            }).optional()
-        )
-    })
-});
-
-const projects = defineCollection({
-    type: 'data',
-    schema: z.object({
-        id: z.string(),
-        name: z.string(),
+        priority: z.number(),
         description: z.string(),
-        thumbnail: z.string().optional(),
-        url: z.string().url().optional(),
-        repository: z.string().url(),
+        images: z.object({
+            thumbnail: z.string().optional(),
+            gallery: z.array(z.object({
+                src: z.string(),
+                title: z.string(),
+                description: z.string().optional(),
+                alt: z.string().optional()
+            })).optional()
+        }).optional(),
+        urls: z.array(z.object({
+            title: z.string(),
+            url: z.string().url()
+        })),
         technologies: z.array(z.object({
-            id: z.string(),
             name: z.string(),
             icon: z.string()
         }))
@@ -132,21 +52,4 @@ const experience = defineCollection({
     })
 })
 
-const achievements = defineCollection({
-    type: 'data',
-    schema: z.object({
-        id: z.string(),
-        priority: z.number(),
-        name: z.string(),
-        event: z.string(),
-        url: z.string().url().optional(),
-        description: z.string(),
-        date: z.string(),
-        company: z.object({
-            name: z.string(),
-            url: z.string().url().optional()
-        }),
-    })
-})
-
-export const collections = { languages, frameworks, databases, tools, others, projects, experience, achievements };
+export const collections = { works, experience };

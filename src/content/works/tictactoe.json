@@ -1,0 +1,16 @@
+{
+    "id": "tictactoe",
+    "name": "Tic Tac Toe",
+    "priority": 8,
+    "description": "An Ionic Mobile app to play Tic Tac Toe. There's a single player mode with 3 levels of difficulty, and a multiplayer mode.",
+    "urls": [
+        { "title": "Repository", "url": "https://github.com/Alwexis/TicTacToe-Ionic" }
+    ],
+    "technologies": [
+        { "name": "Typescript", "icon": "typescript" },
+        { "name": "Angular", "icon": "angular" },
+        { "name": "Ionic", "icon": "ionic" },
+        { "name": "HTML", "icon": "html" },
+        { "name": "CSS", "icon": "css" }
+    ]
+}

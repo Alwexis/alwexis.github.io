@@ -1,0 +1,18 @@
+{
+    "id": "quixichat",
+    "name": "Quixi Chat",
+    "priority": 6,
+    "description": "A Whatsapp Web clone with MEAN Stack. It has a real-time chat, user authentication, and a MongoDB database.",
+    "urls": [
+        { "title": "Repository", "url": "https://github.com/Alwexis/TicTacToe-Ionic" }
+    ],
+    "technologies": [
+        { "name": "Typescript", "icon": "typescript" },
+        { "name": "Angular", "icon": "angular" },
+        { "name": "HTML", "icon": "html" },
+        { "name": "TailwindCSS", "icon": "tailwindcss" },
+        { "name": "Websockets", "icon": "websockets" },
+        { "name": "Express", "icon": "express" },
+        { "name": "MongoDB", "icon": "mongodb" }
+    ]
+}

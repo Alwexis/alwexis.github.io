@@ -4,16 +4,10 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				"nunito-sans": ["Nunito Sans", "sans-serif"],
-				nunito: ["Nunito", "serif"],
-				montserrat: ["Montserrat", "sans-serif"],
-				"fira-code": ["Fira Code", "serif"],
-				inter: ["Inter", "sans-serif"],
-				"dm-sans": ["DM Sans", "sans-serif"],
+				sans: ['Roboto', 'sans-serif'],
+				mono: ['Roboto Mono', 'monospace'],
 			}
 		},
 	},
-	plugins: [
-		require('tailwindcss-animated')
-	],
+	plugins: [],
 }
