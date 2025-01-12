@@ -35,6 +35,7 @@ const experience = defineCollection({
         name: z.string(),
         type: z.string(),
         role: z.string(),
+        location: z.string(),
         description: z.string(),
         startDate: z.string(),
         endDate: z.string().optional(),
@@ -45,7 +46,6 @@ const experience = defineCollection({
         }),
         activities: z.array(z.string()),
         skills: z.array(z.object({
-            id: z.string(),
             name: z.string(),
             icon: z.string().optional()
         })).optional()

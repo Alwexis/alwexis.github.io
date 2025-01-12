@@ -2,7 +2,7 @@
     "id": "mangacat",
     "name": "Mangacat",
     "priority": 7,
-    "description": "An Ionic Mobile app to read manga from mangadex.",
+    "description": "An Ionic Mobile App that consumes the MangaDex API to read manga. It allows you to search for manga and read them. It was a project built for Learning purposes.",
     "urls": [
         { "title": "repository", "url": "https://github.com/Alwexis/Mangacat" }
     ],

@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 
 import Navbar from '../components/Navbar';
-import WorkCard from '../components/WorkCard';
+import ExperienceCard from '../components/ExperienceCard';
 
 import { getCollection } from 'astro:content';
 
@@ -13,13 +13,18 @@ const experience = unsortedExperience.sort((a: any, b: any) => a.data.priority -
 <Layout>
 	<Navbar active="experience" />
 	<main class="text-neutral-900 my-6 md:mt-16 md:mb-4 md:max-w-md mx-auto">
-        <div class="flex flex-col items-center justify-center mb-8">
-            <h1 class="flex md:hidden items-center space-x-2 text-sm md:text-base text-neutral-800">
+        <div class="flex flex-col items-center justify-center mb-2 md:mb-4">
+            <a href="/" class="flex md:hidden items-center space-x-2 text-sm md:text-base text-neutral-800">
                 <svg class="w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M22 13v-2H8.414V5.586L2 12l6.414 6.414V13z"/></svg>
                 <span>Go back</span>
-            </h1>
+            </a>
             <p>Here is part of my work experience, what I did, how I performed and what I achieved in each job:</p>
         </div>
-        <span class="font-mono animate-pulse">Work in Progress...</span>
+        <section class="space-y-4">
+            {experience.map((experience: any, i: number) => {
+                const { data } = experience;
+                return <ExperienceCard client:load {...data} />;
+            })}
+        </section>
 	</main>
 </Layout>

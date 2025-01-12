@@ -1,13 +1,13 @@
 {
-    "id": "michistream",
-    "name": "Michistream",
+    "id": "moonieflix",
+    "name": "MoonieFlix",
     "priority": 5,
-    "description": "Michistream is a streaming Web App to watch series and movies. I used webscraping to get the data of the movies and series, as well as the images and the video links.",
+    "description": "MoonieFlix is a static Streaming Web App that I developed just for fun and learning purposes. I used webscraping to get all the data of the movies and series, as well as the images and the video links. And then consume and embed it in the web app.",
     "urls": [
         { "title": "repository", "url": "https://github.com/Alwexis/michistream" }
     ],
     "technologies": [
-        { "name": "JavaScript", "icon": "javascript" },
+        { "name": "Javascript", "icon": "javascript" },
         { "name": "Astro", "icon": "astro" },
         { "name": "TailwindCSS", "icon": "tailwindcss" },
         { "name": "Node.js", "icon": "nodejs" },

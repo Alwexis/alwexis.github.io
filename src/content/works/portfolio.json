@@ -8,7 +8,7 @@
         { "title": "Live Demo", "url": "https://alwexis.me" }
     ],
     "technologies": [
-        { "name": "JavaScript", "icon": "javascript" },
+        { "name": "Javascript", "icon": "javascript" },
         { "name": "Astro", "icon": "astro" },
         { "name": "React", "icon": "react" },
         { "name": "TailwindCSS", "icon": "tailwindcss" }

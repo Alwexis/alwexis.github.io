@@ -4,33 +4,34 @@
     "type": "work",
     "name": "Team Leader",
     "role": "Team Leader",
-    "description": "I served as Project Manager and Team Leader for SignAI, a Chilean Sign Language (LCHs) interpreter service. This is an innovation project proposed at CITT, which my team and I developed as our final thesis. Under my leadership, we successfully developed the project in a smooth and organized manner using the Waterfall Methodology. It became the highest-rated thesis project of the 2024 Computer Science generation. Additionally, we won first place in the \"Social Impact\" category and second place in the \"Project of the Year\" category at Demoday 2024.",
-    "startDate": "August 2024",
-    "endDate": "At present",
+    "location": "Concepción, Chile",
+    "description": "I led the SignAI project, an innovative initiative in which we developed a Chilean Sign Language (LSCh) interpreter service using Artificial Intelligence. This project was proposed to the CITT of Concepción and developed by my team as a Final Project (CAPSTONE)",
+    "startDate": "Aug 2024",
+    "endDate": "Dec 2024",
     "difference": "4 months",
     "company": {
         "name": "CITT",
         "url": "https://www.duoc.cl/escuela/informatica-telecomunicaciones/citt/"
     },
     "activities": [
-        "Planning and managing the project",
-        "Leading the development team",
-        "Reviewing and approving the project's code and documentation",
-        "First place in the \"Social Impact\" category at Demoday 2024",
-        "Second place in the \"Project of the Year\" category at Demoday 2024."
+        "I led, planned and managed the development of the project.",
+        "Won first place in “Social Impact” category.",
+        "Won second place in “Project of the Year” category at DemoDay 2024, DuocUC.",
+        "Best evaluated CAPSTONE project of 2024 in the Computer Engineering career."
     ],
     "skills": [
-        { "id": "javascript", "name": "JavaScript", "icon": "javascript" },
-        { "id": "astro", "name": "Astro", "icon": "astro" },
-        { "id": "react", "name": "React", "icon": "react" },
-        { "id": "tailwindcss", "name": "TailwindCSS", "icon": "tailwindcss" },
-        { "id": "firebase", "name": "Firebase", "icon": "firebase" },
-        { "id": "mongodb", "name": "MongoDB", "icon": "mongodb" },
-        { "id": "nodejs", "name": "Node.js", "icon": "nodejs" },
-        { "id": "python", "name": "Python", "icon": "python" },
-        { "id": "fastapi", "name": "FastAPI", "icon": "fastapi" },
-        { "id": "tensorflow", "name": "TensorFlow", "icon": "tensorflow" },
-        { "id": "keras", "name": "Keras", "icon": "keras" },
-        { "id": "websockets", "name": "WebSockets", "icon": "websockets" }
+        { "name": "Python", "icon": "python" },
+        { "name": "Tensorflow", "icon": "tensorflow" },
+        { "name": "Keras", "icon": "keras" },
+        { "name": "FastAPI", "icon": "fastapi" },
+        { "name": "Astro", "icon": "astro" },
+        { "name": "React", "icon": "react" },
+        { "name": "TailwindCSS", "icon": "tailwindcss" },
+        { "name": "WebSockets", "icon": "websockets" },
+        { "name": "MongoDB", "icon": "mongodb" },
+        { "name": "Firebase", "icon": "firebase" },
+        { "name": "GIT", "icon": "git" },
+        { "name": "Github", "icon": "github" },
+        { "name": "Trello", "icon": "trello" }
     ]
 }

@@ -14,7 +14,7 @@
         { "title": "Article", "url": "https://www.duoc.cl/?noticia_post_type=demo-day-2024-duoc-uc-creatividad-e-innovacion" }
     ],
     "technologies": [
-        { "name": "JavaScript", "icon": "javascript" },
+        { "name": "Javascript", "icon": "javascript" },
         { "name": "Astro", "icon": "astro" },
         { "name": "React", "icon": "react" },
         { "name": "TailwindCSS", "icon": "tailwindcss" },
@@ -23,7 +23,7 @@
         { "name": "Node.js", "icon": "nodejs" },
         { "name": "Python", "icon": "python" },
         { "name": "FastAPI", "icon": "fastapi" },
-        { "name": "TensorFlow", "icon": "tensorflow" },
+        { "name": "Tensorflow", "icon": "tensorflow" },
         { "name": "Keras", "icon": "keras" },
         { "name": "WebSockets", "icon": "websockets" }
     ]
