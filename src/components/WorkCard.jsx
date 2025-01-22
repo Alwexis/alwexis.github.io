@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-export default function WorkCard(data) {
+export default function WorkCard(data, idx) {
     const [readMore, setReadMore] = useState(false);
     const handleReadMore = () => {
         setReadMore(!readMore);
     }
 
     return (
-        <div className="w-full flex flex-col py-4 px-6 bg-neutral-200/50 rounded-sm border border-neutral-50 my-2.5">
+        <div className={`w-full flex flex-col py-4 px-6 bg-neutral-200/25 rounded-sm border border-neutral-200 my-2.5 animate-fade-down animate-delay-[${(data.priority + 1) * 200}ms]`}>
             <h2 className="font-bold">{data.name}</h2>
             <section className="flex flex-col items-start justify-between">
                 <p className={`text-sm overflow-y-hidden text-ellipsis h-fit ${readMore ? 'max-h-screen' : 'max-h-10'} transition-all duration-500`}>{data.description}</p>

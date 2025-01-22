@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function WorkCard(data) {
     return (
-        <div className="w-full flex flex-col py-4 px-6 bg-neutral-200/50 rounded-sm border border-neutral-50 my-2.5">
+        <div className={`w-full flex flex-col py-4 px-6 bg-neutral-200/25 rounded-sm border border-neutral-200 my-2.5 animate-fade-down animate-delay-[${(data.priority + 1) * 200}ms]`}>
             <h2 className="font-bold w-full flex justify-between items-start">
                 <span>{data.name}</span>
                 <a
@@ -31,7 +31,7 @@ export default function WorkCard(data) {
             <span className="text-sm">What I did:</span>
             <ul className="list-disc list-inside text-sm text-neutral-800 font-light">
                 {data.activities.map((activity, index) => (
-                    <li className="ml-2" key={`activity_${index}`}>{activity}</li>
+                    <li className="ml-1" key={`activity_${index}`}>{activity}</li>
                 ))}
             </ul>
             <div className="w-[90%] self-center bg-neutral-300 h-0.5 my-2" />
