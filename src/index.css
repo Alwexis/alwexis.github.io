@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+@theme {
+    --font-geist: "Geist", serif;
+    --font-geist-mono: "Geist Mono", serif;
+    --font-space-grotesk: "Space Grotesk", serif;
+
+    --animate-shrink-to-one-character: shrinkToOneCharacter 1.5s ease-in-out
+        forwards;
+
+    @keyframes shrinkToOneCharacter {
+        0%,
+        50% {
+            max-width: 5rem;
+        }
+        100% {
+            max-width: calc(var(--spacing) * 5.5);
+        }
+    }
+}
+
+.colored-corners {
+    background: linear-gradient(white, white) top left no-repeat, linear-gradient(white, white) top left no-repeat, linear-gradient(white, white) top right no-repeat, linear-gradient(white, white) top right no-repeat, linear-gradient(white, white) bottom left no-repeat, linear-gradient(white, white) bottom left no-repeat, linear-gradient(white, white) bottom right no-repeat, linear-gradient(white, white) bottom right no-repeat, transparent;
+    background-clip: border-box, border-box, border-box, border-box, border-box, border-box, border-box, border-box, content-box;
+    background-size: 2px 12px, 12px 2px;
+    color: white;
+    &:hover {
+        background-size: 2px 16px, 36px 2px;
+    }
+    &.active {
+        background-size: 2px 16px, 36px 2px;
+    }
+}
+
+.colored-corners-1 {
+    position: relative;
+    background-color: transparent;
+}
+
+.colored-corners-1::before,
+.colored-corners-1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    padding-bottom: 10%;
+}
+
+.colored-corners-1::before {
+    top: 0;
+    left: 0;
+    border-top: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+}
+
+.colored-corners-1::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+}
+
+.colored-corners-2 {
+    position: relative;
+    background-color: transparent;
+}
+
+.colored-corners-2::before,
+.colored-corners-2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    padding-bottom: 10%;
+}
+
+.colored-corners-2::before {
+    top: 0;
+    right: 0;
+    border-top: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+}
+
+.colored-corners-2::after {
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+}
