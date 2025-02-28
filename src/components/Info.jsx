@@ -14,7 +14,7 @@ export default function Info({ animationVisible }) {
             <Navbar />
             <main
                 id="info"
-                className="flex flex-col items-center space-y-32 h-full w-full py-16 md:py-20 text-neutral-100 overflow-y-auto animate-fade-down scheme-dark"
+                className="flex flex-col items-center space-y-32 h-full w-full pb-12 md:py-20 text-neutral-100 overflow-y-auto animate-fade-down scheme-dark"
             >
                 <About />
                 <Works />

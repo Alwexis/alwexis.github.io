@@ -4,7 +4,7 @@ export default function About() {
             id="about"
             className="w-full max-w-xs md:max-w-2xl animate-fade-down"
         >
-            <div className="mx-auto max-w-64 w-full md:hidden text-neutral-100 pb-8">
+            <div className="mx-auto max-w-64 w-full md:hidden text-neutral-100 pb-24">
                 <section className="flex justify-between w-full">
                     <svg
                         className="cursor-pointer w-8 hover:scale-110 hover:text-neutral-300 transition-all"
