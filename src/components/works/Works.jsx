@@ -21,7 +21,7 @@ export default function Works() {
     return (
         <section id="work" className="max-w-xs md:max-w-2xl w-full h-fit">
             <h2 className="text-4xl font-space-grotesk text-neutral-100 animate-fade-down">Works</h2>
-            <div className="grid grid-rows-2 grid-cols-1 space-y-6 my-4 animate-fade-down">
+            <div className="grid grid-cols-1 space-y-6 my-4 animate-fade-down">
                 {
                     works.map((work, index) => (
                         <WorkCard key={index} work={work} />

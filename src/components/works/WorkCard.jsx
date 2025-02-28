@@ -9,7 +9,7 @@ export default function WorkCard({ work }) {
             <p className={`text-neutral-300 font-geist font-light overflow-hidden transition-all ${showMore ? '' : 'whitespace-nowrap text-ellipsis'}`}>
                 {work.description}
             </p>
-            <button type="button" onClick={() => setShowMore(!showMore)} className="font-semibold text-neutral-100 hover:text-neutral-300 transition-all cursor-pointer w-fit">
+            <button type="button" onClick={() => setShowMore(!showMore)} className="font-semibold text-neutral-100 hover:text-neutral-300 transition-all cursor-pointer w-fit mb-2.5">
                 { showMore ? 'Read less...' : 'Read more...' }
             </button>
             {
@@ -17,7 +17,7 @@ export default function WorkCard({ work }) {
                     <section className="flex space-x-2 my-2 select-none">
                         {
                             work.urls.map((url, index) => (
-                                <a key={index} href={url.url} target="_blank" rel="noreferrer" className="inline-block px-1.5 py-1 rounded-xs text-xs border border-neutral-300 my-0.5 transition-all capitalize font-geist hover:bg-neutral-900">
+                                <a key={index} href={url.url} target="_blank" rel="noreferrer" className="inline-block px-1.5 py-1 rounded-xs text-sm border border-neutral-300 my-0.5 transition-all capitalize font-geist hover:bg-neutral-900">
                                     <span className='flex items-start'>
                                         {url.title}
                                         <svg className='w-2.5 h-2.5 ml-1' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm11-3v9l-3.794-3.793l-5.999 6l-1.414-1.414l5.999-6L12 3z"/></svg>
