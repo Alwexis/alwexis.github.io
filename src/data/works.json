@@ -1,0 +1,144 @@
+[
+    {
+        "id": "signai",
+        "name": "SignAI",
+        "description": "SignAI, formerly known as HERMES, is my capstone project and a Chilean Sign Language interpreter service. It uses AI to convert sign language into text and voice into sign language. The project features a deep learning model, a REST API, a developer portal, a fully digitized Chilean Sign Language dictionary stored in MongoDB, and a real-time communication app to demonstrate integration. It also earned top honors at Demoday 2024, winning 1st place in the “Social Impact” category and 2nd in “Project of the Year.”",
+        "images": {
+            "gallery": [
+                { "src": "signai_demoday_2024_1.webp", "title": "Official Picture" },
+                { "src": "signai_demoday_2024_team.webp", "title": "Official Team Picture" }
+            ]
+        },
+        "urls": [
+            { "title": "Repository", "url": "https://github.com/Alwexis/SignAI" },
+            { "title": "Article", "url": "https://www.duoc.cl/?noticia_post_type=demo-day-2024-duoc-uc-creatividad-e-innovacion" }
+        ],
+        "technologies": [
+            { "name": "Javascript", "icon": "javascript" },
+            { "name": "Astro", "icon": "astro" },
+            { "name": "React", "icon": "react" },
+            { "name": "TailwindCSS", "icon": "tailwindcss" },
+            { "name": "Firebase", "icon": "firebase" },
+            { "name": "MongoDB", "icon": "mongodb" },
+            { "name": "Node.js", "icon": "nodejs" },
+            { "name": "Python", "icon": "python" },
+            { "name": "FastAPI", "icon": "fastapi" },
+            { "name": "Tensorflow", "icon": "tensorflow" },
+            { "name": "Keras", "icon": "keras" },
+            { "name": "WebSockets", "icon": "websockets" }
+        ]
+    },
+    {
+        "id": "wavenet",
+        "name": "WaveNet",
+        "description": "WaveNet is a Hackathon project that was developed in 48 hours. The project is a social network inspired by the 90s and the MegaMan StarForce video game series, more specifically the concept of digital bonds (or brotherbond).",
+        "urls": [
+            { "title": "Repository", "url": "https://github.com/Alwexis/WaveNet" },
+            { "title": "Live Demo", "url": "https://alwexis-wavenet.vercel.app/" }
+        ],
+        "technologies": [
+            { "name": "Javascript", "icon": "javascript" },
+            { "name": "React", "icon": "react" },
+            { "name": "TailwindCSS", "icon": "tailwindcss" },
+            { "name": "Socket.io", "icon": "websockets" },
+            { "name": "FastAPI", "icon": "fastapi" },
+            { "name": "MongoDB", "icon": "mongodb" },
+            { "name": "Firebase", "icon": "firebase" }
+        ]
+    },
+    {
+        "id": "portfolio",
+        "name": "Portfolio",
+        "description": "My personal portfolio. It aims to be minimalistic and simple. It was built with Astro, React and TailwindCSS.",
+        "urls": [
+            { "title": "Repository", "url": "https://github.com/Alwexis/alwexis.github.io" },
+            { "title": "Live Demo", "url": "https://alwexis.me" }
+        ],
+        "technologies": [
+            { "name": "Javascript", "icon": "javascript" },
+            { "name": "Astro", "icon": "astro" },
+            { "name": "React", "icon": "react" },
+            { "name": "TailwindCSS", "icon": "tailwindcss" }
+        ]
+    },
+    {
+        "id": "pokedex",
+        "name": "Pokédex",
+        "description": "It's a WIP Pokédex that I'm developing. It's a project that includes a Deep Learning model to classify Pokémon images. My goal is to achieve a 90% accuracy rate in the first 151 Pokémon. Once the model is ready, I'll integrate it into a web or mobile application.",
+        "urls": [
+            { "title": "Repository", "url": "https://github.com/Alwexis/WaveNet" }
+        ],
+        "technologies": [
+            { "name": "Javascript", "icon": "javascript" },
+            { "name": "React", "icon": "react" },
+            { "name": "TailwindCSS", "icon": "tailwindcss" },
+            { "name": "Python", "icon": "fastapi" },
+            { "name": "FastAPI", "icon": "fastapi" },
+            { "name": "Tensorflow", "icon": "fastapi" },
+            { "name": "Keras", "icon": "fastapi" }
+        ]
+    },
+    {
+        "id": "moonieflix",
+        "name": "MoonieFlix",
+        "description": "MoonieFlix is a static Streaming Web App that I developed just for fun and learning purposes. I used webscraping to get all the data of the movies and series, as well as the images and the video links. And then consume and embed it in the web app.",
+        "urls": [
+            { "title": "repository", "url": "https://github.com/Alwexis/michistream" }
+        ],
+        "technologies": [
+            { "name": "Javascript", "icon": "javascript" },
+            { "name": "Astro", "icon": "astro" },
+            { "name": "TailwindCSS", "icon": "tailwindcss" },
+            { "name": "Node.js", "icon": "nodejs" },
+            { "name": "Puppeteer", "icon": "puppeteer" }
+        ]
+    },
+    {
+        "id": "quixichat",
+        "name": "Quixi Chat",
+        "description": "A \"WhatsApp Web\" clone with its basic functionalities, such as sending messages, creating groups, and adding contacts. The project was developed using the MEAN stack (MongoDB, Express, Angular, and Node.js) and Socket.io for real-time communication.",
+        "urls": [
+            { "title": "Repository", "url": "https://github.com/Alwexis/TicTacToe-Ionic" }
+        ],
+        "technologies": [
+            { "name": "Typescript", "icon": "typescript" },
+            { "name": "Angular", "icon": "angular" },
+            { "name": "HTML", "icon": "html" },
+            { "name": "TailwindCSS", "icon": "tailwindcss" },
+            { "name": "Websockets", "icon": "websockets" },
+            { "name": "Express", "icon": "express" },
+            { "name": "MongoDB", "icon": "mongodb" }
+        ]
+    },
+    {
+        "id": "mangacat",
+        "name": "Mangacat",
+        "description": "An Ionic Mobile App that consumes the MangaDex API to read manga. It allows you to search for manga and read them. It was a project built for Learning purposes.",
+        "urls": [
+            { "title": "repository", "url": "https://github.com/Alwexis/Mangacat" }
+        ],
+        "technologies": [
+            { "name": "Typescript", "icon": "typescript" },
+            { "name": "Angular", "icon": "angular" },
+            { "name": "Ionic", "icon": "ionic" },
+            { "name": "HTML", "icon": "html" },
+            { "name": "CSS", "icon": "css" }
+        ]
+    },
+    {
+        "id": "tictactoe",
+        "name": "Tic Tac Toe",
+        "description": "A simple Tic Tac Toe game with a minimalist design. The game is built with Ionic and it has a single player mode with 3 levels of difficulty, and a multiplayer mode developed with WebSockets.",
+        "urls": [
+            { "title": "Repository", "url": "https://github.com/Alwexis/TicTacToe-Ionic" }
+        ],
+        "technologies": [
+            { "name": "Typescript", "icon": "typescript" },
+            { "name": "Angular", "icon": "angular" },
+            { "name": "Ionic", "icon": "ionic" },
+            { "name": "HTML", "icon": "html" },
+            { "name": "CSS", "icon": "css" },
+            { "name": "WebSockets", "icon": "websockets" }
+        ]
+    }
+]
