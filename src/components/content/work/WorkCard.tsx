@@ -1,7 +1,6 @@
 import { Icon, iconMap } from "@/components/ui/Icon";
 import { Project } from "@/lib/notion/types";
 import { geistSans, spaceGrotesk } from "@/lib/fonts";
-import Link from "next/link";
 
 type WorkCardProps = {
   work: Project;

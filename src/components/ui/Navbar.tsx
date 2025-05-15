@@ -3,6 +3,7 @@
 import { geistMono, spaceGrotesk } from "@/lib/fonts";
 import { useEffect, useState } from "react";
 import clsx from 'clsx';
+import Image from "next/image";
 
 export default function Navbar() {
   const [selected, setSelected] = useState<string>('');
@@ -35,7 +36,13 @@ export default function Navbar() {
           <h3 className="mx-1 font-semibold">AS</h3>
           <span>{`/>`}</span>
           */}
-          <img src="/logo light.webp" alt="Ariel Silva's logo" className="w-16" />
+          <Image
+            src="/logo light.webp"
+            alt="Ariel Silva's logo"
+            width={64}
+            height={64}
+            className="object-contain"
+          />
         </div>
       </div>
       <div className={`h-fit flex justify-between md:flex-col md:justify-center md:space-y-2 text-sm md:text-base ${geistMono.className}`}>

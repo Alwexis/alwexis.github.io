@@ -11,11 +11,11 @@ export default function About() {
       </h2>
       <div className={`whitespace-pre-line text-neutral-300 md:text-xl ${geistSans.className} space-y-6 my-2`}>
         <p>
-          My name is Ariel Silva and I'm a recently graduated Computer Engineer passionate about
+          My name is Ariel Silva and I&apos;m a recently graduated Computer Engineer passionate about
           innovation and continuous learning.
         </p>
         <p>
-          I'm commited to delivering efficient technological solutions and
+          I&apos;m commited to delivering efficient technological solutions and
           with the ability to adapt quickly to new scenarios, technologies
           and challenges.
         </p>
