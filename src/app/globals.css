@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+.corner-border {
+    --s: 40px; /* corner size */
+    padding: 20px; /* the gap */
+    border: 1px solid var(--color-neutral-300);
+    mask:
+      conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+       0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+      conic-gradient(#000 0 0) content-box;
+}
+
+.corner-border-animated {
+    background: linear-gradient(var(--color-neutral-300), var(--color-neutral-300)) top left no-repeat, linear-gradient(var(--color-neutral-300), var(--color-neutral-300)) top left no-repeat, linear-gradient(var(--color-neutral-300), var(--color-neutral-300)) top right no-repeat, linear-gradient(var(--color-neutral-300), var(--color-neutral-300)) top right no-repeat, linear-gradient(var(--color-neutral-300), var(--color-neutral-300)) bottom left no-repeat, linear-gradient(var(--color-neutral-300), var(--color-neutral-300)) bottom left no-repeat, linear-gradient(var(--color-neutral-300), var(--color-neutral-300)) bottom right no-repeat, linear-gradient(var(--color-neutral-300), var(--color-neutral-300)) bottom right no-repeat, transparent;
+    background-clip: border-box, border-box, border-box, border-box, border-box, border-box, border-box, border-box, content-box;
+    background-size: 1px 12px, 12px 1px;
+    &:hover {
+        background-size: 1px 16px, 36px 1px;
+    }
+    &.active {
+        background-size: 1px 16px, 36px 1px;
+    }
+}
