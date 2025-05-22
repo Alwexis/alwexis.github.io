@@ -28,24 +28,21 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="md:h-full w-full md:w-fit z-10 flex flex-col justify-between text-neutral-100 absolute top-0 md:left-0 animate-fade-down md:animate-fade-right py-6 px-8 bg-gradient-to-b from-black from-75% via-black via-75% to-black/10 to-100% md:from-transparent md:via-transparent md:to-transparent">
-      <div className="hidden md:block md:h-2/5">
+    <nav className="xl:h-full w-full xl:w-fit z-10 flex lg:space-x-12 xl:flex-col items-center xl:items-start justify-center text-neutral-100 absolute top-0 lg:left-0 animate-fade-down xl:animate-fade-right py-6 md:py-8 xl:py-6 px-8 bg-gradient-to-b from-black from-75% via-black via-75% to-black/10 to-100% xl:from-transparent xl:via-transparent xl:to-transparent">
+      <div className="hidden lg:block xl:h-2/5">
         <div className={`flex items-center cursor-pointer ${spaceGrotesk.className} text-2xl`}>
-          {/*
-          <span>{`<`}</span>
-          <h3 className="mx-1 font-semibold">AS</h3>
-          <span>{`/>`}</span>
-          */}
           <Image
             src="/logo light.webp"
             alt="Ariel Silva's logo"
             width={64}
             height={64}
             className="object-contain"
+            priority
           />
         </div>
       </div>
-      <div className={`h-fit flex justify-between md:flex-col md:justify-center md:space-y-2 text-sm md:text-base ${geistMono.className}`}>
+      <div
+        className={`h-fit w-full lg:max-w-xl xl:w-fit flex justify-between xl:flex-col xl:justify-center xl:space-y-2 text-sm md:text-2xl ${geistMono.className}`}>
         {["About", "Work", "Experience", "CV"].map((item, index) => (
           <span
             key={index}
@@ -63,14 +60,12 @@ export default function Navbar() {
           </span>
         ))}
       </div>
-      <div className="hidden md:flex items-end md:h-2/5">
+      <div className="hidden xl:flex items-end xl:h-2/5">
         <section className="flex space-x-2">
           <a href="https://github.com/Alwexis" title="Ariel Silva's GitHub" target="_blank">
             <svg
-              className="cursor-pointer w-6 hover:scale-110 hover:text-neutral-300 transition-all"
+              className="cursor-pointer w-8 hover:scale-110 hover:text-neutral-300 transition-all"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
               viewBox="0 0 24 24"
             >
               <path
@@ -81,10 +76,8 @@ export default function Navbar() {
           </a>
           <a href="https://www.linkedin.com/in/arielsilvar" title="Ariel Silva's LinkedIn" target="_blank">
             <svg
-              className="cursor-pointer w-6 hover:scale-110 hover:text-neutral-300 transition-all"
+              className="cursor-pointer w-8 hover:scale-110 hover:text-neutral-300 transition-all"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
               viewBox="0 0 24 24"
             >
               <path
@@ -95,10 +88,8 @@ export default function Navbar() {
           </a>
           <a href="https://x.com/alwexis_dev" title="Ariel Silva's Twitter/X" target="_blank">
             <svg
-              className="cursor-pointer w-6 hover:scale-110 hover:text-neutral-300 transition-all"
+              className="cursor-pointer w-8 hover:scale-110 hover:text-neutral-300 transition-all"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
               viewBox="0 0 24 24"
             >
               <path
@@ -109,10 +100,8 @@ export default function Navbar() {
           </a>
           <a href="mailto:arielsilvar.dev@gmail.com" title="Ariel Silva's Email">
             <svg
-              className="cursor-pointer w-6 hover:scale-110 hover:text-neutral-300 transition-all"
+              className="cursor-pointer w-8 hover:scale-110 hover:text-neutral-300 transition-all"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
               viewBox="0 0 24 24"
             >
               <path
