@@ -4,12 +4,12 @@ export default function About() {
   return (
     <section
       id="about"
-      className="w-full max-w-xs md:max-w-2xl animate-fade py-8"
+      className="w-full max-w-xs lg:max-w-2xl xl:max-w-3xl xl:min-h-dvh xl:flex xl:flex-col xl:items-start xl:justify-center animate-fade py-8"
     >
-      <h2 className={`text-3xl ${spaceGrotesk.className} text-neutral-100`}>
+      <h2 className={`text-3xl md:text-5xl xl:text-4xl ${spaceGrotesk.className} text-neutral-100`}>
         About
       </h2>
-      <div className={`whitespace-pre-line text-neutral-300 md:text-xl ${geistSans.className} space-y-6 my-2`}>
+      <div className={`whitespace-pre-line text-neutral-300 md:text-3xl xl:text-2xl ${geistSans.className} space-y-6 my-2`}>
         <p>
           My name is Ariel Silva and I&apos;m a recently graduated Computer Engineer passionate about
           innovation and continuous learning.

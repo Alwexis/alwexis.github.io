@@ -22,3 +22,11 @@
         background-size: 1px 16px, 36px 1px;
     }
 }
+
+@media (max-width: 768px) {
+    .corner-border {
+        --s: 15px; /* corner size */
+        padding: 20px; /* the gap */
+        border: 1px solid var(--color-neutral-400);
+    }
+}

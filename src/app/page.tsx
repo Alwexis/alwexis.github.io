@@ -7,7 +7,7 @@ import Navbar from "@/components/ui/Navbar";
 
 export default function Home() {
   return (
-    <main className='flex flex-col items-center space-y-32 h-full w-full pb-12 md:py-20 text-neutral-100 overflow-y-auto scheme-dark px-8'>
+    <main className='flex flex-col items-center h-full w-full space-y-12 xl:space-y-32 pb-12 text-neutral-100 overflow-y-auto scheme-dark px-8'>
       <Navbar />
 
       <Social />
