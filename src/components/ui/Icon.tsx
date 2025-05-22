@@ -7,7 +7,6 @@ type IconKey = keyof typeof simpleIcons;
 
 interface IconProps {
   name: IconKey;
-  size?: number;
   color?: string;
   className?: string;
 }
@@ -44,7 +43,6 @@ export const iconMap = {
 // Component
 export const Icon: FC<IconProps> = ({
   name,
-  size = 24,
   color = "currentColor",
   className,
 }) => {
