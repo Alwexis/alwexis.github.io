@@ -5,7 +5,6 @@ import { geistSans, spaceGrotesk } from "@/lib/fonts"
 export default function ExperienceCard({ experience }: { experience: Experience }) {
   const start_date = new Date(experience.start_date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })
   const end_date = experience.end_date ? new Date(experience.end_date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : "present"
-  console.log(experience.skills)
 
   return (
     <div className="corner-border px-8 py-8 h-fit w-full flex flex-col animate-fade">
