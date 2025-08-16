@@ -1,8 +1,8 @@
 'use client';
 
-import { motion } from "framer-motion";
+import { Variants, motion } from "framer-motion";
 
-const container = {
+const container: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -13,7 +13,7 @@ const container = {
   }
 };
 
-const item = {
+const item: Variants = {
   hidden: { opacity: 0, y: 10 },
   show: { opacity: 1, y: 0, transition: { duration: 0.25, ease: "easeInOut" } }
 };
@@ -41,7 +41,7 @@ export default function About() {
       <motion.h3 initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1, delay: 0.5 } }} className="text-lg mt-2 xl:px-8">Contact me:</motion.h3>
       <motion.div variants={container} initial="hidden" animate="show" className="space-x-4 text-neutral-300 font-light xl:px-8">
         { social.map((social) => (
-          <motion.a variants={item} rel="noreferrer" href={social.url} key={social.name} target="_blank" className="hover:text-neutral-200 transition-colors duration-200 inline-block">{social.name}</motion.a>
+          <motion.a variants={item} key={social.name} rel="noreferrer" href={social.url} target="_blank" className="hover:text-neutral-200 transition-colors duration-200 inline-block">{social.name}</motion.a>
         ))}
       </motion.div>
     </section>
