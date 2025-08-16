@@ -1,5 +1,5 @@
-import { notion, experiencesDB } from '@/lib/notion/client'
-import { Experience } from './types'
+import { notion, experiencesDB } from '@lib/notion/client'
+import { Experience } from '@lib/types'
 
 export async function fetchExperiences(): Promise<Experience[]> {
     const response = await notion.databases.query({
@@ -20,6 +20,7 @@ export async function fetchExperiences(): Promise<Experience[]> {
             company: {
                 name: page.properties.company_name.rich_text[0].plain_text,
                 url: page.properties.company_url.url,
+                image: page.properties.company_image.url
             },
             activities: page.properties.activities.multi_select.map((t: any) => t.name),
             skills: page.properties.skills.multi_select.map((t: any) => t.name),

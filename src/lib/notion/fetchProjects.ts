@@ -1,12 +1,12 @@
-import { notion, projectsDB } from "@/lib/notion/client";
-import { Project } from "./types";
+import { notion, projectsDB } from "@lib/notion/client";
+import { Project } from "@lib/types";
 
 export async function fetchProjects(): Promise<Project[]> {
     const response = await notion.databases.query({
         database_id: projectsDB,
         sorts: [
             {
-                timestamp: 'created_time',
+                property: 'priority',
                 direction: 'ascending',
             },
         ],

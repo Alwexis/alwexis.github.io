@@ -1,6 +1,6 @@
 export default function WorkWrapperSkeleton() {
   return (
-    <div className="grid grid-cols-1 space-y-6 my-4">
+    <div className="grid grid-cols-1 space-y-6 my-4 w-full">
       {[0, 1, 2].map((_, i) => (
         <div key={i} className="corner-border px-8 py-8 h-fit w-full flex flex-col animate-pulse">
           <div className="h-7 bg-neutral-700 rounded w-2/3"></div>

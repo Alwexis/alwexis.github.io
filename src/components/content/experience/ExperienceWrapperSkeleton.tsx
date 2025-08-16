@@ -1,8 +1,8 @@
-import { geistSans, spaceGrotesk } from "@/lib/fonts"
+import { geistSans, spaceGrotesk } from "@lib/fonts"
 
 export default function ExperienceWrapperSkeleton() {
   return (
-    <div className="grid grid-cols-1 space-y-8 my-4 animate-fade-down">
+    <div className="grid grid-cols-1 space-y-8 my-4 animate-fade-down w-full">
       {[1, 2, 3].map((v, i) => (
         <div key={i} className="corner-border px-8 py-8 h-fit w-full flex flex-col animate-pulse">
         <div className={`flex flex-col md:flex-row md:items-center space-x-2 text-lg md:text-xl ${spaceGrotesk.className}`}>
