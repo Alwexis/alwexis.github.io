@@ -8,8 +8,16 @@ interface Props {
 }
 
 const { experience, class: className = "" } = Astro.props;
-const { company, companyLink, role, date, location, achievements, technologies } =
-  experience.data;
+const {
+  company,
+  companyLink,
+  role,
+  date,
+  location,
+  description,
+  achievements,
+  technologies,
+} = experience.data;
 ---
 
 <article class:list={["py-7 first:pt-0 last:pb-0 space-y-2.5", className]}>
@@ -38,6 +46,15 @@ const { company, companyLink, role, date, location, achievements, technologies }
       {date} · {location}
     </div>
   </div>
+
+  {
+    description && (
+      <Markdown
+        content={description}
+        class='text-xs text-body-light dark:text-body-dark leading-relaxed'
+      />
+    )
+  }
 
   {
     achievements && achievements.length > 0 && (
