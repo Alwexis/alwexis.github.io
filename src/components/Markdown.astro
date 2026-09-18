@@ -114,7 +114,7 @@ function parseMarkdown(text: string): string {
     return `%%MDTOKEN${idx}%%`;
   });
 
-  // restairar tokens recursivamente
+  // restaurar tokens recursivamente
   let limit = 10;
   while (/%%MDTOKEN\d+%%/.test(result) && limit-- > 0) {
     result = result.replace(
