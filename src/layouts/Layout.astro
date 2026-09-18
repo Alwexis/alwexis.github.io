@@ -7,7 +7,7 @@ import type { LayoutProps } from "../types";
 type Props = LayoutProps;
 
 const {
-  title = "Ariel Silva — Front-End Developer & Computer Engineer",
+  title = "Ariel Silva",
   description = "Front-End Developer and Computer Engineer focused on building modern, accessible, and high-performance interfaces across React, Vue, TypeScript, and micro-frontends.",
 } = Astro.props;
 ---
@@ -30,6 +30,19 @@ const {
       rel='stylesheet'
     />
     <link rel='icon' href='/favicon.svg' type='image/svg+xml' />
+    <script is:inline>
+      (() => {
+        const storedTheme =
+          typeof localStorage !== "undefined"
+            ? localStorage.getItem("theme")
+            : null;
+        if (storedTheme === "light") {
+          document.documentElement.classList.remove("dark");
+        } else {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
   </head>
   <body
     class='bg-canvas-light dark:bg-canvas-dark text-primary-light dark:text-primary-dark font-sans antialiased min-h-screen flex flex-col selection:bg-neutral-800 selection:text-white transition-colors duration-150'>
@@ -56,6 +69,9 @@ const {
         if (themeToggleBtn) {
           themeToggleBtn.addEventListener("click", () => {
             const isDark = document.documentElement.classList.toggle("dark");
+            if (typeof localStorage !== "undefined") {
+              localStorage.setItem("theme", isDark ? "dark" : "light");
+            }
             updateIcon(isDark);
           });
         }
