@@ -1,0 +1,15 @@
+{
+    "title": "Moonie Framework",
+    "description": "**Moonie** is a lightweight reactive web microframework built from scratch to understand how modern frontend frameworks implement core concepts such as *reactivity, templating, routing,* and component-oriented development. It uses a custom `.mn` syntax and implements these abstractions at a lower level, resulting in a framework of approximately **5 KB gzipped**.",
+    "extendedDescription": "**Moonie** is a lightweight reactive web microframework built from scratch to explore the concepts and abstractions behind modern frontend frameworks. It implements *reactivity, templating, directives, routing,* and component-oriented development without relying on an existing framework.\nThe project uses a custom `.mn` file-based template syntax that combines JavaScript logic with declarative templates and reactive state. At approximately **5 KB gzipped**, Moonie is intentionally small and serves as an exploration of the underlying mechanisms that make reactive web applications possible.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCLWKiMRK2uZnj3vTYZzEL4MmapGyGoh0VbHS3x1NsqHMYDEOYO3MxvWuKgcLvgtb5TagO6iH4dha-9eqVpSR5196Zm24CTAJvymsY4OFPj4jgw8VwmvzMxcOmJfpXYKYf0ZRl2Ra_wSoyVU6ZSkHPhcr3lagSn3rwDZdLEHIGqUw36fKIO1LDt_WHzQS6rvBpurmRtHC50XbrlqC3GOns3OSRIUMaIrdpKuva9pxt_HslNEre-anS0S2vvHaxh0hoTAOzDjoH56PI",
+    "imageAlt": "A minimalist, highly polished UI dashboard for a modern coffee shop.",
+    "githubLink": "https://github.com/Alwexis/Moonie",
+    "liveLink": "https://moonie-docs.vercel.app/",
+    "technologies": [
+        "Typescript",
+        "Moonie"
+    ],
+    "featured": true,
+    "priority": 9
+}

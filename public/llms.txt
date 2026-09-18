@@ -1,0 +1,39 @@
+# Ariel Silva
+
+> Front-End Developer & Computer Engineer based in Concepción, Chile. Specializing in high-performance web applications, accessible design systems, and software engineering across TypeScript, React, Python, and Rust.
+
+Personal portfolio and technical archive of Ariel Silva (Alwexis). Contains detailed records of production projects, open-source frameworks, systems software, and professional engineering experience.
+
+Key focus areas:
+- Front-End Architecture: React, TypeScript, TailwindCSS, Astro, Vue, WebSockets, WCAG accessibility, and design systems.
+- Systems & Machine Learning: Rust (emulators, hardware architecture), Python (TensorFlow, Keras, FastAPI, computer vision).
+- Full-Stack & Automation: Node.js, REST APIs, databases (PostgreSQL, MongoDB), event-driven systems, and developer tooling.
+
+## Projects
+
+- [SignAI](https://github.com/Alwexis/SignAI): Deep learning system for Chilean Sign Language (LSCh) interpretation using computer vision, FastAPI, and WebSockets. 1st place in Social Impact and 2nd place in Project of the Year at DuocUC DemoDay.
+- [Moonie Framework](https://github.com/Alwexis/Moonie): Lightweight (~5 KB gzipped) reactive web microframework with custom `.mn` file syntax, exploring lower-level reactivity and routing.
+- [Bruma](https://github.com/Alwexis/Bruma): Educational Game Boy and Game Boy Color emulator written from scratch in Rust, translating hardware documentation (CPU, memory, instruction set, graphics) into a working emulator running commercial titles.
+- [WaveNet](https://github.com/Alwexis/WaveNet): Retro-inspired social network built for a Codedex hackathon, featuring custom `.wavebond` encrypted identity files and real-time communication.
+- [Pokédex-AI](https://github.com/Alwexis/Pokedex-AI): Educational computer vision project for Pokémon classification using TensorFlow and Keras across diverse visual media.
+
+## Experience
+
+- [Lexy](https://lexy.cl): Full-Stack Developer & Technical Owner (Health Area). Standardized frontend architecture, created shared component libraries and automation tooling, and built event-driven scraping systems.
+- [MasterBase®](https://masterbase.com): Front-End Developer & Technical Lead. Led development of a condominium management SaaS from scratch and reported a critical framework security vulnerability.
+- [CITT Duoc UC](https://duoc.cl): Web & Mobile Development Lead. Taught software development workshops, mentored project teams, and directed the award-winning SignAI initiative.
+
+## Links
+
+- [Website](https://alwexis.is-a.dev): Primary portfolio and work archive.
+- [Work Archive](https://alwexis.is-a.dev/work): Complete listing of all engineering works and technical details.
+- [GitHub](https://github.com/Alwexis): Open-source repositories and software projects.
+- [LinkedIn](https://www.linkedin.com/in/arielsilvar): Professional background, endorsements, and network.
+- [X / Twitter](https://x.com/alwexis_dev): Technical posts and development updates.
+
+## Optional
+
+- [English Resume (PDF)](https://alwexis.is-a.dev/cv_en.pdf): Full curriculum vitae in English.
+- [Spanish Resume (PDF)](https://alwexis.is-a.dev/cv_es.pdf): Full curriculum vitae in Spanish.
+- [WaveNet Live Demo](https://alwexis-wavenet.vercel.app/): Live deployment of the WaveNet social platform.
+- [Moonie Cafeteria Demo](https://cafeteria-moonie.vercel.app/): Live application demo built with the Moonie reactive framework.

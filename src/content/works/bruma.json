@@ -1,0 +1,17 @@
+{
+  "title": "Bruma",
+  "description": "**Bruma** is an educational Game Boy and Game Boy Color emulator built from scratch in `Rust` to understand how these systems work at the hardware and software level. The project involved implementing core components such as the *CPU, memory, instruction set,* and graphics system, resulting in a functional emulator capable of running several commercial games.",
+  "extendedDescription": "**Bruma** is an educational Game Boy and Game Boy Color emulator written entirely in `Rust`, built from scratch to explore how these systems work at the hardware and software level.\nThe project involved studying the consoles' *CPU, memory, instruction set, graphics hardware,* and *timing behavior*, then translating those specifications into a working emulator. Bruma currently has a functional release capable of running several commercial games, including **Mega Man 5, Bomberman, Pokémon Crystal,** and **Pokémon Yellow**.",
+  "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDGEZPcTS6M9BrJT4tnU-fO6eh09NQuEO60WPtaDpCrLln-LnvL0rRAY9fzXl3H4RXq4O_F76PsUCJx3S_jR1iPGRutFGqM4Unyo0lenjWn5IS6V5NfbLzoA1Br5YILpMRf2emIyJHwv3vFdpSCmVx8OP6xFHgtEkC2F0XHJrr696QWo9CrKRlcMcMgGa3Osg7h2s-pTunNA8teoO5nE3k_SFrL9gvAahyaXy1avRiDVEeVw1f6voKgjVSnUuygQcWFQjJ7f-XQhMk",
+  "imageAlt": "An abstract visualization of a digital social network data flow.",
+  "githubLink": "https://github.com/Alwexis/Bruma",
+  "technologies": [
+    "Rust"
+  ],
+  "gallery": [
+    "gallery/bruma-bomberman.gif",
+    "gallery/bruma-megaman.gif"
+  ],
+  "featured": true,
+  "priority": 8
+}

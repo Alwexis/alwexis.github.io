@@ -1,0 +1,19 @@
+{
+    "title": "WaveNet",
+    "description": "**WaveNet** is a retro-inspired social network designed and built in **two days** for a Codedex hackathon. It combines real-time social features with a custom `.wavebond` file system designed to make user connections feel more physical and deliberate.",
+    "extendedDescription": "**WaveNet** is a retro-inspired social network designed and built in **two days** for a Codedex hackathon, drawing inspiration from *1990s technology* and the *[Mega Man Battle Network](https://megaman.fandom.com/wiki/Mega_Man_Battle_Network_(series)) / [Star Force](https://es.wikipedia.org/wiki/Mega_Man_Star_Force_(videojuego))* aesthetic.\nThe application allows users to create posts, add friends, and communicate through private messages with real-time updates. It also introduces **WaveBond**, a custom `.wavebond` file containing encrypted information used to identify and connect with another user, designed to make adding friends feel more physical and deliberate.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDGEZPcTS6M9BrJT4tnU-fO6eh09NQuEO60WPtaDpCrLln-LnvL0rRAY9fzXl3H4RXq4O_F76PsUCJx3S_jR1iPGRutFGqM4Unyo0lenjWn5IS6V5NfbLzoA1Br5YILpMRf2emIyJHwv3vFdpSCmVx8OP6xFHgtEkC2F0XHJrr696QWo9CrKRlcMcMgGa3Osg7h2s-pTunNA8teoO5nE3k_SFrL9gvAahyaXy1avRiDVEeVw1f6voKgjVSnUuygQcWFQjJ7f-XQhMk",
+    "imageAlt": "An abstract visualization of a digital social network data flow.",
+    "githubLink": "https://github.com/Alwexis/WaveNet",
+    "liveLink": "https://alwexis-wavenet.vercel.app/",
+    "technologies": [
+        "React",
+        "Typescript",
+        "TailwindCSS",
+        "Socket.io",
+        "FastAPI",
+        "MongoDB"
+    ],
+    "featured": false,
+    "priority": 5
+}
