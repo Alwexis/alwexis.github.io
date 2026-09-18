@@ -1,0 +1,34 @@
+---
+import { getCollection } from "astro:content";
+import WorkCard from "./WorkCard.astro";
+import type { WorkEntry } from "../types";
+
+const works: WorkEntry[] = await getCollection("works");
+
+const sortedWorks = [...works].sort(
+  (a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0),
+);
+
+const displayWorks = sortedWorks.slice(0, 3);
+---
+
+<section
+  class='pt-24 pb-18 border-b border-b-neutral-200 dark:border-b-border-dark'
+  id='work'>
+  <div class='flex items-baseline justify-between mb-8'>
+    <h2
+      class='text-lg font-semibold tracking-tight uppercase text-primary-light dark:text-emphasis'>
+      WORK.
+    </h2>
+  </div>
+  <div class='divide-y divide-neutral-200 dark:divide-border-dark'>
+    {displayWorks.map((work) => <WorkCard work={work} headingTag='h3' />)}
+  </div>
+</section>
+<div class='w-full flex justify-end py-8'>
+  <a
+    href='/work'
+    class='cursor-pointer text-sm text-body-light dark:text-body-dark hover:text-primary-light dark:hover:text-emphasis transition-colors'>
+    More projects →
+  </a>
+</div>

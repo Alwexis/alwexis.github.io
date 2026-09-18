@@ -1,0 +1,28 @@
+{
+    "role": "Web & Mobile Development Workshop & Team Lead",
+    "company": "CITT",
+    "companyLink": "https://www.duoc.cl/escuela/informatica-telecomunicaciones/citt/",
+    "date": "Dec 2022 - Dec 2024",
+    "location": "Concepción, Chile",
+    "description": "Technical and educational leadership in web and mobile development, mentoring students and leading technology projects from ideation to presentation.",
+    "extendedDescription": "As Web & Mobile Development Lead at CITT, I taught programming and software development to students ranging from school level to university, as well as professionals from non-technical fields. I designed learning materials, organized development teams, reviewed projects and code, and mentored students through both technical and leadership challenges.\nBeyond teaching, I helped define the direction and outcome of projects developed within the workshop, deciding whether they should be presented to CITT leadership, submitted to funding programs, taken further into development, or discontinued. I also represented CITT in technical events and competitions, coordinating with professors, directors, external organizations, and industry representatives.",
+    "achievements": [
+        "**Technical & Educational Leadership** — Led a development workshop with 10-15 students per semester, teaching programming, reviewing code and projects, organizing teams, and mentoring students in both technical and leadership skills.",
+        "**Project Direction & Mentorship** — Guided student projects from ideation to execution, helping define priorities, technical approaches, team structures, and potential outcomes such as competitions, funding programs, research, or production.",
+        "**SignAI — Technical Lead** — Led the technical development of an assistive communication platform, including the design of a convolutional neural network from scratch. The project received 1st place in Social Impact and 2nd place in Project of the Year at the national DemoDay DuocUC, competing against approximately 24 projects from across Chile."
+    ],
+    "technologies": [
+        "Python",
+        "Tensorflow",
+        "Keras",
+        "FastAPI",
+        "React",
+        "Angular",
+        "TailwindCSS",
+        "Ionic",
+        "Socketio",
+        "MongoDB",
+        "Firebase",
+        "git"
+    ]
+}

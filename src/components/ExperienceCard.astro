@@ -1,0 +1,61 @@
+---
+import type { ExperienceEntry } from "../types";
+import Markdown from "./Markdown.astro";
+
+interface Props {
+  experience: ExperienceEntry;
+  class?: string;
+}
+
+const { experience, class: className = "" } = Astro.props;
+const { company, companyLink, role, date, location, achievements, technologies } =
+  experience.data;
+---
+
+<article class:list={["py-7 first:pt-0 last:pb-0 space-y-2.5", className]}>
+  <div class='flex flex-col sm:flex-row sm:items-baseline justify-between gap-1'>
+    <div>
+      {
+        companyLink ? (
+          <a
+            class='hover:underline text-xs text-muted dark:text-body-dark'
+            href={companyLink}
+            rel='noopener noreferrer'
+            target='_blank'>
+            {company}
+          </a>
+        ) : (
+          <span class='text-xs text-muted dark:text-body-dark'>
+            {company}
+          </span>
+        )
+      }
+      <h3 class='text-base font-medium text-primary-light dark:text-primary-dark'>
+        {role}
+      </h3>
+    </div>
+    <div class='text-xs font-mono text-muted dark:text-body-dark'>
+      {date} · {location}
+    </div>
+  </div>
+
+  {
+    achievements && achievements.length > 0 && (
+      <ul class='space-y-1.5 text-xs text-body-light dark:text-body-dark pl-3 list-disc marker:text-neutral-400 dark:marker:text-neutral-600 leading-relaxed'>
+        {achievements.map((item) => (
+          <li>
+            <Markdown content={item} />
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  {
+    technologies && technologies.length > 0 && (
+      <div class='text-xs font-mono text-muted pt-1'>
+        {technologies.join(" · ")}
+      </div>
+    )
+  }
+</article>

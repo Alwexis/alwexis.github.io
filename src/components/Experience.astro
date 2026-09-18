@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import ExperienceCard from "./ExperienceCard.astro";
+import type { ExperienceEntry } from "../types";
+
+const experiences: ExperienceEntry[] = await getCollection("experience");
+
+const experienceOrder = ["lexy", "masterbase", "citt"];
+const sortedExperiences = [...experiences].sort((a, b) => {
+  const indexA = experienceOrder.indexOf(a.id);
+  const indexB = experienceOrder.indexOf(b.id);
+  if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+  if (a.data.isPrimaryNode) return -1;
+  if (b.data.isPrimaryNode) return 1;
+  return 0;
+});
+---
+
+<section
+  class='pt-24 pb-18 border-y border-neutral-200 dark:border-border-dark'
+  id='experience'>
+  <div class='flex items-baseline justify-between mb-8'>
+    <h2
+      class='text-lg font-semibold tracking-tight uppercase text-primary-light dark:text-emphasis'>
+      Experience.
+    </h2>
+    <span class='text-[11px] font-mono text-muted dark:text-body-dark'
+      >2023 — PRESENT</span
+    >
+  </div>
+  <div class='divide-y divide-neutral-200 dark:divide-border-dark'>
+    {
+      sortedExperiences.map((exp) => (
+        <ExperienceCard experience={exp} />
+      ))
+    }
+  </div>
+</section>

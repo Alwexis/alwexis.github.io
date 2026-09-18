@@ -1,0 +1,33 @@
+{
+    "role": "Full-Stack Developer (Frontend focused)",
+    "company": "Lexy",
+    "companyLink": "https://lexy.cl/",
+    "date": "Aug 2025 - current",
+    "location": "Santiago, Chile",
+    "description": "Full-Stack development focused on digitalizing business processes, frontend architecture, automation, and internal developer tooling.",
+    "extendedDescription": "As a Full-Stack Developer with a strong focus on Frontend, I design and build internal software solutions aimed at digitalizing and automating business processes. Beyond application development, I contribute to frontend architecture, engineering standards, and internal tooling, helping establish a consistent foundation for product development across the company.\nI currently serve as the technical owner of the Health area, contributing to architectural decisions, development standards, and technical coordination while supporting and mentoring other developers.",
+    "achievements": [
+        "**Frontend Architecture & Standardization** — Defined and standardized frontend architecture and development practices across internal applications, establishing a more consistent foundation for product development.",
+        "**Design System & Developer Tooling** — Helped establish a shared component library and developed CLI-based scaffolding and automation tools to accelerate development and reduce repetitive work.",
+        "**Technical Ownership** — Took technical ownership of the Health area, contributing to architecture decisions, development standards, implementation, and technical coordination.",
+        "**Business Automation & Full-Stack Development** — Built end-to-end solutions across frontend applications, APIs, databases, cloud services, and third-party integrations to digitalize and automate operational processes.",
+        "**Scraping & Process Optimization** — Designed and optimized worker-based, event-driven scraping systems, reducing execution times from minutes to seconds and improving the reliability of critical processes."
+    ],
+    "technologies": [
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Celery",
+        "AWS",
+        "make",
+        "n8n",
+        "git",
+        "Event-Driven Architecture"
+    ],
+    "isPrimaryNode": true
+}

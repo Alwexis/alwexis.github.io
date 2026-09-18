@@ -1,0 +1,43 @@
+---
+import type { NavItem } from "../types";
+
+const navItems: NavItem[] = [
+  { label: "Experience", href: "/#experience" },
+  { label: "Work", href: "/#work" },
+  { label: "About", href: "/#about" },
+  { label: "CV", href: "/#cv" },
+];
+---
+
+<header
+  class='fixed top-0 left-0 right-0 z-50 bg-canvas-light/90 dark:bg-canvas-dark/90 backdrop-blur-md border-b border-neutral-200 dark:border-border-dark'>
+  <div class='max-w-3xl mx-auto px-6 h-14 flex items-center justify-between'>
+    <div class='flex items-center gap-2'>
+      <a
+        class='text-sm font-medium tracking-tight text-primary-light dark:text-primary-dark hover:text-black dark:hover:text-white transition-colors'
+        href='/#me'>
+        Ariel Silva
+      </a>
+    </div>
+    <nav class='flex items-center gap-5 sm:gap-6 text-xs'>
+      {
+        navItems.map((item) => (
+          <a
+            class='text-muted dark:text-body-dark hover:text-primary-light dark:hover:text-emphasis transition-colors'
+            href={item.href}>
+            {item.label}
+          </a>
+        ))
+      }
+      <button
+        aria-label='Toggle color mode'
+        class='w-7 h-7 ml-1 flex items-center justify-center text-muted dark:text-body-dark hover:text-black dark:hover:text-white transition-colors cursor-pointer'
+        id='theme-toggle'
+        type='button'>
+        <span class='material-symbols-outlined text-[15px]' id='theme-icon'
+          >light_mode</span
+        >
+      </button>
+    </nav>
+  </div>
+</header>

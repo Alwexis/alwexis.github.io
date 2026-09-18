@@ -1,0 +1,21 @@
+{
+    "role": "Front-End Developer",
+    "company": "Masterbase",
+    "companyLink": "https://masterbase.com/",
+    "date": "Sep 2024 - Dec 2024",
+    "location": "Santiago, Chile",
+    "description": "Frontend development and technical leadership for a SaaS platform for condominium management.",
+    "extendedDescription": "As a Frontend Developer, I helped build a SaaS platform for condominium management from the ground up, working with a small development team and the company's internal web framework.\nBeyond implementation, I took a technical leadership role within the team: translating ambiguous requirements into technical solutions, defining application structure and communication patterns, reviewing and approving changes, and helping other developers solve technical problems. I also worked directly with stakeholders to explain the product's technical implementation and architectural decisions.",
+    "achievements": [
+        "**SaaS Product Development** — Built a condominium management platform from the ground up, covering apartment and family management, visitor registration, resident announcements, and automated reminders through the company's mailing system.",
+        "**Technical Leadership** — Led the technical execution of a three-developer team, assigning tasks, translating requirements into technical solutions, reviewing features, and helping teammates resolve implementation challenges.",
+        "**Security Vulnerability Discovery** — Identified and responsibly reported a critical security vulnerability in the company's internal web framework that could allow applications to bypass intended platform restrictions and interact with resources outside their intended scope."
+    ],
+    "technologies": [
+        "HTML",
+        "Javascript",
+        "CSS",
+        "React",
+        "MongoDB"
+    ]
+}

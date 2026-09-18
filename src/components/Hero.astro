@@ -1,0 +1,63 @@
+---
+import type { SocialLink } from "../types";
+
+const socialLinks: SocialLink[] = [
+  { label: "github", url: "https://github.com/Alwexis", isExternal: true },
+  {
+    label: "linkedin",
+    url: "https://www.linkedin.com/in/arielsilvar",
+    isExternal: true,
+  },
+  { label: "x.com", url: "https://x.com/alwexis_dev", isExternal: true },
+  {
+    label: "email",
+    url: "mailto:ariel.silva.dev@gmail.com",
+    isExternal: false,
+  },
+];
+---
+
+<section class='pt-6 pb-14' id='me'>
+  <div class='space-y-4'>
+    <div
+      class='flex items-center justify-between text-xs font-mono tracking-wider text-muted dark:text-body-dark uppercase'>
+      <span>Fullstack Developer &amp; Computer Engineer</span>
+    </div>
+    <h1
+      class='text-3xl sm:text-4xl font-semibold tracking-tight text-primary-light dark:text-emphasis'>
+      Ariel Silva
+    </h1>
+    <p
+      class='text-[15px] sm:text-base leading-relaxed text-body-light dark:text-body-dark pt-1'>
+      Software Engineer and Computer Engineer focused on building software
+      across the stack, with a strong focus on frontend development,
+      architecture, and automation.
+    </p>
+    <div
+      class='pt-3 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-mono text-muted dark:text-body-dark'>
+      <div class='flex items-center gap-3'>
+        {
+          socialLinks.map((link, index) => (
+            <>
+              <a
+                class='hover:text-black dark:hover:text-white transition-colors'
+                href={link.url}
+                target={link.isExternal ? "_blank" : undefined}
+                rel={link.isExternal ? "noopener noreferrer" : undefined}>
+                {link.label}{" "}
+                <span class='text-neutral-400 dark:text-neutral-600'>↗</span>
+              </a>
+              {index < socialLinks.length - 1 && (
+                <span class='text-neutral-300 dark:text-neutral-800'>/</span>
+              )}
+            </>
+          ))
+        }
+      </div>
+      <div
+        class='sm:ml-auto text-neutral-500 dark:text-neutral-400 text-[11px]'>
+        Concepción, CL
+      </div>
+    </div>
+  </div>
+</section>

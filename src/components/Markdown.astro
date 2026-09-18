@@ -1,0 +1,110 @@
+---
+interface Props {
+  content?: string;
+  class?: string;
+  inline?: boolean;
+}
+
+const { content, class: className = "", inline = false } = Astro.props;
+
+let rawText = content ?? "";
+if (!rawText && Astro.slots.has("default")) {
+  rawText = await Astro.slots.render("default");
+}
+
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function parseMarkdown(text: string): string {
+  let result = escapeHtml(text);
+  const tokens: string[] = [];
+
+  // code
+  result = result.replace(/`([^`]+)`/g, (_, code) => {
+    const idx = tokens.length;
+    tokens.push(
+      `<code class="px-1.5 py-0.5 font-mono text-[0.85em] rounded-xs bg-neutral-100 dark:bg-surface-dark text-code-light dark:text-code-dark border border-neutral-200 dark:border-border-dark">${code}</code>`,
+    );
+    return `%%MDTOKEN${idx}%%`;
+  });
+
+  // links
+  result = result.replace(
+    /\[((?:[^\[\]]|\[[^\[\]]*\])+)\]\(\s*((?:[^\s()]|\([^()]*\))+)\s*\)/g,
+    (_, label, url) => {
+      const idx = tokens.length;
+      tokens.push(
+        `<a href="${url.trim()}" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 text-code-light dark:text-code-dark hover:text-black dark:hover:text-white transition-colors">${label}</a>`,
+      );
+      return `%%MDTOKEN${idx}%%`;
+    },
+  );
+
+  // bold
+  result = result.replace(/\*\*([^*]+)\*\*/g, (_, bold) => {
+    const idx = tokens.length;
+    tokens.push(
+      `<strong class="font-medium text-bold-light dark:text-bold-dark">${bold}</strong>`,
+    );
+    return `%%MDTOKEN${idx}%%`;
+  });
+  result = result.replace(/__([^_]+)__/g, (_, bold) => {
+    const idx = tokens.length;
+    tokens.push(
+      `<strong class="font-medium text-bold-light dark:text-bold-dark">${bold}</strong>`,
+    );
+    return `%%MDTOKEN${idx}%%`;
+  });
+
+  // italic
+  result = result.replace(/\*([^*]+)\*/g, (_, italic) => {
+    const idx = tokens.length;
+    tokens.push(
+      `<em class="italic text-code-light dark:text-code-dark">${italic}</em>`,
+    );
+    return `%%MDTOKEN${idx}%%`;
+  });
+  result = result.replace(/(?<!\w)_([^_]+)_(?!\w)/g, (_, italic) => {
+    const idx = tokens.length;
+    tokens.push(
+      `<em class="italic text-code-light dark:text-code-dark">${italic}</em>`,
+    );
+    return `%%MDTOKEN${idx}%%`;
+  });
+
+  // restairar tokens recursivamente
+  let limit = 10;
+  while (/%%MDTOKEN\d+%%/.test(result) && limit-- > 0) {
+    result = result.replace(
+      /%%MDTOKEN(\d+)%%/g,
+      (_, idx) => tokens[Number(idx)],
+    );
+  }
+
+  return result;
+}
+
+const paragraphs = rawText
+  .split("\n")
+  .map((p) => p.trim())
+  .filter(Boolean)
+  .map(parseMarkdown);
+---
+
+{
+  inline ? (
+    <span class={className} set:html={parseMarkdown(rawText)} />
+  ) : (
+    <div class={className}>
+      {paragraphs.map((html) => (
+        <p set:html={html} />
+      ))}
+    </div>
+  )
+}

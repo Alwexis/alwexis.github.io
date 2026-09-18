@@ -1,0 +1,86 @@
+---
+import Gallery from "./Gallery.astro";
+import Markdown from "./Markdown.astro";
+import type { ProjectLink, WorkEntry } from "../types";
+
+interface Props {
+  work: WorkEntry;
+  extended?: boolean;
+  headingTag?: "h2" | "h3";
+  class?: string;
+}
+
+const {
+  work,
+  extended = false,
+  headingTag = "h3",
+  class: className = "",
+} = Astro.props;
+
+const Heading = headingTag;
+
+const links: ProjectLink[] = [];
+if (work.data.githubLink) {
+  links.push({ label: "Repository ↗", url: work.data.githubLink });
+}
+if (work.data.liveLink) {
+  links.push({ label: "Live Demo ↗", url: work.data.liveLink });
+}
+---
+
+<article class:list={["py-7 first:pt-0 last:pb-0 space-y-2.5", className]}>
+  <div class='flex flex-col sm:flex-row sm:items-baseline justify-between gap-1'>
+    <div class='flex flex-wrap items-baseline gap-x-2 gap-y-1'>
+      <Heading class='text-base font-medium text-primary-light dark:text-primary-dark'>
+        {work.data.title}
+      </Heading>
+      {
+        work.data.subtitle && (
+          <span class='text-xs text-muted dark:text-body-dark font-mono tracking-wide uppercase'>
+            [{work.data.subtitle}]
+          </span>
+        )
+      }
+    </div>
+    <div class='flex items-center gap-3 text-xs font-mono'>
+      {
+        links.map((link, linkIndex) => (
+          <>
+            <a
+              class='text-muted dark:text-body-dark hover:text-black dark:hover:text-white transition-colors'
+              href={link.url}
+              rel='noopener noreferrer'
+              target='_blank'>
+              {link.label}
+            </a>
+            {linkIndex < links.length - 1 && (
+              <span class='text-neutral-300 dark:text-neutral-800'>/</span>
+            )}
+          </>
+        ))
+      }
+    </div>
+  </div>
+
+  {
+    work.data.highlight && (
+      <div class='text-[11px] font-mono text-neutral-500 dark:text-neutral-400'>
+        {work.data.highlight}
+      </div>
+    )
+  }
+
+  <Markdown
+    content={extended
+      ? work.data.extendedDescription || work.data.description
+      : work.data.description}
+    class='space-y-1.5 text-sm leading-relaxed text-body-light dark:text-body-dark pt-1 max-w-2xl'
+  />
+
+  {/* Gallery Carousel */}
+  <Gallery title={work.data.title} images={work.data.gallery} />
+
+  <div class='text-xs font-mono text-muted pt-1'>
+    {work.data.technologies.join(" · ")}
+  </div>
+</article>

@@ -1,0 +1,18 @@
+{
+    "title": "SignAI",
+    "description": "**SignAI** is a deep learning project exploring *Chilean Sign Language (LSCh)* interpretation through computer vision. I led the technical direction, combining neural network inference, `FastAPI`, and real-time web applications. The project received **1st place in Social Impact** and **2nd place in Project of the Year** at DuocUC's national project fair.",
+    "extendedDescription": "**SignAI** is a deep learning project focused on interpreting *Chilean Sign Language (LSCh)* through computer vision. I led the technical direction of the project, developing an end-to-end system that combined image processing, neural network inference, a `FastAPI` backend, and real-time web applications using `WebSockets`.\nThe project explored how machine learning could contribute to more accessible communication technologies for the Chilean deaf community. SignAI received **1st place in Social Impact** and **2nd place in Project of the Year** at DuocUC's national project fair, while also achieving the **highest grade in its Capstone section with a 6.7/7.0**.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCXpkoSQqTlBHUb7fxcFTa3VWyuXVz91rJPzZsa1DXv0SGx3iPtqtQB_w2ITAnGVevNhtuM4_tWbNjEfvsowyU8bhhpuljrt7jCGnRrHMWtkWgeioBCHS-m9hh6tpL07CJp1cZlFJ4rH5KyXKNyPfdCpH4N2_VckYG4uBfjzeKVXXBEw8mfYeyi1yuhIINXxc-DmcvpTHeCIC9TzvsCKqVAGcH3Phk-ssYUyodNRIWQI-Y3ZZmJAr1mKwA0wUD8z7Hc9QrN55Usacg",
+    "imageAlt": "A sophisticated digital rendering of a sleek, dark-themed AI interpreter interface.",
+    "githubLink": "https://github.com/Alwexis/SignAI",
+    "technologies": [
+        "Python",
+        "Tensorflow",
+        "Keras",
+        "FastAPI",
+        "React",
+        "Websockets"
+    ],
+    "featured": true,
+    "priority": 100
+}

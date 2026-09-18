@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# LLM Context
+# Full context available at: https://alwexis.is-a.dev/llms.txt
+
+Sitemap: https://alwexis.is-a.dev/sitemap-index.xml

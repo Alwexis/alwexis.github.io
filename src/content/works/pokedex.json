@@ -1,0 +1,15 @@
+{
+  "title": "Pokedex-AI",
+  "description": "**Pokédex-AI** is an educational computer vision project focused on Pokémon image classification using `TensorFlow` and `Keras`. It uses a custom dataset containing varied visual representations and explores both CNNs built from scratch and *transfer learning* approaches.",
+  "extendedDescription": "**Pokédex-AI** is an educational computer vision project focused on Pokémon image classification using deep learning. I built and prepared a custom dataset and trained *Convolutional Neural Networks* with `TensorFlow` and `Keras` to recognize Pokémon across different visual contexts, including figures, posters, trading cards, game screenshots, and sprites.\nThe project supports the recognition of **[23 Pokémon](https://github.com/Alwexis/Pokedex-AI#pokédex-list)** and explores two approaches to model development: a CNN architecture designed from scratch and *transfer learning* using a pre-trained model. It provided hands-on experience with dataset creation, image preprocessing, model architecture, fine-tuning, and evaluation.",
+  "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDGEZPcTS6M9BrJT4tnU-fO6eh09NQuEO60WPtaDpCrLln-LnvL0rRAY9fzXl3H4RXq4O_F76PsUCJx3S_jR1iPGRutFGqM4Unyo0lenjWn5IS6V5NfbLzoA1Br5YILpMRf2emIyJHwv3vFdpSCmVx8OP6xFHgtEkC2F0XHJrr696QWo9CrKRlcMcMgGa3Osg7h2s-pTunNA8teoO5nE3k_SFrL9gvAahyaXy1avRiDVEeVw1f6voKgjVSnUuygQcWFQjJ7f-XQhMk",
+  "imageAlt": "An abstract visualization of a digital social network data flow.",
+  "githubLink": "https://github.com/Alwexis/Pokedex-AI",
+  "technologies": [
+    "Python",
+    "Tensorflow",
+    "Keras"
+  ],
+  "featured": false,
+  "priority": 4
+}

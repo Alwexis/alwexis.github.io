@@ -1,0 +1,65 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import type { LayoutProps } from "../types";
+
+type Props = LayoutProps;
+
+const {
+  title = "Ariel Silva — Front-End Developer & Computer Engineer",
+  description = "Front-End Developer and Computer Engineer focused on building modern, accessible, and high-performance interfaces across React, Vue, TypeScript, and micro-frontends.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html class='dark' lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <title>{title}</title>
+    <meta name='description' content={description} />
+    <link href='https://fonts.googleapis.com' rel='preconnect' />
+    <link crossorigin='' href='https://fonts.gstatic.com' rel='preconnect' />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap'
+      rel='stylesheet'
+    />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap'
+      rel='stylesheet'
+    />
+    <link rel='icon' href='/favicon.svg' type='image/svg+xml' />
+  </head>
+  <body
+    class='bg-canvas-light dark:bg-canvas-dark text-primary-light dark:text-primary-dark font-sans antialiased min-h-screen flex flex-col selection:bg-neutral-800 selection:text-white transition-colors duration-150'>
+    <Header />
+    <main class='w-full max-w-3xl mx-auto px-6 pt-24 pb-20 flex-1'>
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      (function () {
+        const themeToggleBtn = document.getElementById("theme-toggle");
+        const themeIcon = document.getElementById("theme-icon");
+
+        function updateIcon(isDark: boolean) {
+          if (themeIcon) {
+            themeIcon.textContent = isDark ? "light_mode" : "dark_mode";
+          }
+        }
+
+        const isDarkInit = document.documentElement.classList.contains("dark");
+        updateIcon(isDarkInit);
+
+        if (themeToggleBtn) {
+          themeToggleBtn.addEventListener("click", () => {
+            const isDark = document.documentElement.classList.toggle("dark");
+            updateIcon(isDark);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

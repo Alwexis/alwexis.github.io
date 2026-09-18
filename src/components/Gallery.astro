@@ -1,0 +1,77 @@
+---
+interface Props {
+  title: string;
+  images?: string[];
+}
+
+const { title, images = [] } = Astro.props;
+---
+
+{
+  images && images.length > 0 && (
+    <div class='gallery-container pt-3 pb-2 space-y-2'>
+      <div class='flex items-center justify-between'>
+        <span class='text-xs font-mono tracking-wider uppercase text-muted dark:text-body-dark'>
+          Gallery{" "}
+          <span class='text-neutral-400 dark:text-neutral-600 font-normal'>
+            ({images.length})
+          </span>
+        </span>
+        {images.length > 1 && (
+          <div class='flex items-center gap-1.5'>
+            <button
+              type='button'
+              aria-label='Previous image'
+              class='gallery-prev w-6 h-6 flex items-center justify-center border border-neutral-300 dark:border-border-dark rounded-xs text-xs text-muted dark:text-body-dark hover:text-black dark:hover:text-white hover:border-black dark:hover:border-neutral-500 transition-colors cursor-pointer select-none'>
+              ←
+            </button>
+            <button
+              type='button'
+              aria-label='Next image'
+              class='gallery-next w-6 h-6 flex items-center justify-center border border-neutral-300 dark:border-border-dark rounded-xs text-xs text-muted dark:text-body-dark hover:text-black dark:hover:text-white hover:border-black dark:hover:border-neutral-500 transition-colors cursor-pointer select-none'>
+              →
+            </button>
+          </div>
+        )}
+      </div>
+      <div class='gallery-track flex gap-3 overflow-x-auto snap-x snap-mandatory scrollbar-none py-1 scroll-smooth'>
+        {images.map((src, idx) => (
+          <div class='snap-start shrink-0 w-64 sm:w-80 aspect-video rounded-xs overflow-hidden border border-neutral-200 dark:border-border-dark bg-neutral-100 dark:bg-surface-dark'>
+            <img
+              src={src}
+              alt={`${title} gallery image ${idx + 1}`}
+              class='w-full h-full object-cover duration-300'
+              loading='lazy'
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+<script>
+  function setupGalleries() {
+    document.querySelectorAll(".gallery-container").forEach((container) => {
+      const track = container.querySelector(".gallery-track");
+      const prevBtn = container.querySelector(".gallery-prev");
+      const nextBtn = container.querySelector(".gallery-next");
+
+      if (!track) return;
+
+      prevBtn?.addEventListener("click", () => {
+        track.scrollBy({ left: -320, behavior: "smooth" });
+      });
+
+      nextBtn?.addEventListener("click", () => {
+        track.scrollBy({ left: 320, behavior: "smooth" });
+      });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", setupGalleries);
+  } else {
+    setupGalleries();
+  }
+</script>
